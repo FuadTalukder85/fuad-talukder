@@ -1,3 +1,4 @@
+import Skill from "@/component/skill/Skill";
 import React from "react";
 
 const AboutMePage = () => {
@@ -13,8 +14,34 @@ const AboutMePage = () => {
           conversions. Design Modern, Eye-Catching Responsive website is my
           working Goal.
         </p>
-        <h1 className="text-3xl mt-10">Education Qualification</h1>
-        <p>Secondary School Certificate (S.S.C.)</p>
+        <div>
+          <h1 className="text-3xl mt-10 border-b-4 border-red-500 w-[330px]">
+            Education Qualification
+          </h1>
+        </div>
+        <div className="flex gap-48 mt-5">
+          <div>
+            <p>2015</p>
+          </div>
+          <div>
+            <p className="text-xl font-semibold">
+              Secondary School Certificate (S.S.C.) : Science
+            </p>
+            <p>Mirer Kapashatiya High School, Faridpur</p>
+          </div>
+        </div>
+
+        <div className="flex gap-48 mt-5">
+          <div>
+            <p>2019</p>
+          </div>
+          <div>
+            <p className="text-xl font-semibold">
+              Diploma in Engineering : Computer
+            </p>
+            <p>National Polytechnic Institute, Faridpur</p>
+          </div>
+        </div>
         <p className="mt-5">
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita
           labore ad natus omnis, possimus quidem eos iusto praesentium, ducimus
@@ -26,8 +53,7 @@ const AboutMePage = () => {
       </div>
 
       <div className="w-[50%]">
-        <h1 className="text-3xl">Education Qualification</h1>
-        <p>Skill</p>
+        <Skill></Skill>
         <p className="mt-5">Contact form</p>
         <p className="mt-5">
           <button>Resume</button>
