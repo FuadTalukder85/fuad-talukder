@@ -1,6 +1,6 @@
-"use client";
 import { ReactNode } from "react";
 import LeftSideBar from "../leftSideBar/LeftSideBar";
+import { CiMenuFries } from "react-icons/ci";
 import "./Sidebar.css";
 
 type TChildren = {
@@ -10,16 +10,19 @@ type TChildren = {
 const SideBar = ({ children }: TChildren) => {
   return (
     <div>
-      <div className="drawer lg:drawer-open">
-        <input id="my-drawer-2" type="checkbox" className="drawer-toggle" />
+      <div className="drawer lg:drawer-open relative">
+        <input
+          id="my-drawer-2"
+          type="checkbox"
+          className="drawer-toggle hidden"
+        />
         <div className="drawer-content flex flex-col bg-[#1C2023]">
-          {/* <HomePage children={children}></HomePage> */}
           {children}
           <label
             htmlFor="my-drawer-2"
-            className="btn btn-primary drawer-button lg:hidden"
+            className="text-white rounded-lg p-3 bg-red-500 text-2xl lg:hidden w-[50px] absolute top-5 right-8"
           >
-            Open drawer
+            <CiMenuFries />
           </label>
         </div>
         <div className="drawer-side">

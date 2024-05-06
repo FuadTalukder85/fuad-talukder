@@ -7,7 +7,7 @@ const PortfolioPage = () => {
       <h1 className="text-white text-3xl mt-10 border-b-4 border-red-500 w-[330px]">
         Portfolio
       </h1>
-      <div className="flex gap-10 px-28 mt-16">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:px-28 mt-16">
         {/* portfolio one */}
         <div className="bg-[#161212]">
           <Image src={foodsphere} alt="foodsphere" width={400}></Image>

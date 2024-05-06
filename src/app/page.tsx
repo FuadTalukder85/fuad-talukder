@@ -1,9 +1,10 @@
 import React from "react";
+import AboutMePage from "./about-me/page";
 
 const HomePage = () => {
   return (
     <div className="">
-      <h1>Home page</h1>
+      <AboutMePage></AboutMePage>
     </div>
   );
 };

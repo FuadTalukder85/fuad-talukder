@@ -10,15 +10,32 @@ const LeftSideBar = () => {
         <Image src={logo} alt="logo" width={150} className="rounded-2xl" />
       </div>
       <h1 className="mt-5 text-3xl flex justify-center">Fuad Talukder</h1>
-      <p className="flex justify-center ">Junior Frontend Developer</p>
+      <p className="flex justify-center text-[#cacaca]">
+        Junior Frontend Developer
+      </p>
       <li className="mt-10">
-        <Link href="about-me">About me</Link>
+        <Link
+          href="about-me"
+          className="focus:text-[#cacaca] focus:bg-[#1C2023]"
+        >
+          About me
+        </Link>
       </li>
       <li>
-        <Link href="portfolio">Portfolio</Link>
+        <Link
+          href="portfolio"
+          className="focus:text-[#cacaca] focus:bg-[#1C2023]"
+        >
+          Portfolio
+        </Link>
       </li>
       <li>
-        <Link href="contact">Contact</Link>
+        <Link
+          href="contact"
+          className="focus:text-[#cacaca] focus:bg-[#1C2023]"
+        >
+          Contact
+        </Link>
       </li>
     </div>
   );

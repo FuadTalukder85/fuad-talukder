@@ -3,11 +3,9 @@ import Skill from "@/component/skill/Skill";
 import { FaDownload } from "react-icons/fa6";
 const AboutMePage = () => {
   return (
-    <div className="flex gap-20 p-10">
-      <div className="w-[50%]">
-        {/* <h1 className="text-3xl text-white">Fuad Talukder</h1>
-        <p className="text-[#cacaca]">Junior Frontend Developer</p> */}
-        <p className="mt-5 text-[#cacaca]">
+    <div className="md:flex gap-20 p-10">
+      <div className="md:w-[50%]">
+        <p className="mt-10 md:mt-0 text-[#cacaca]">
           <span className="text-white">Hello, This is Fuad,</span> Complete
           Diploma in Computer. I am specialized in web design, Frontend
           technology and dynamic sector, It,s my passion. I am good at MERN
@@ -24,22 +22,22 @@ const AboutMePage = () => {
           my clients and establish a good relationship. I,m fully dedicated to
           my Profession and Reputetion. Hardworking and Honesty is my policy.
         </p>
-        <div className="flex gap-10 mt-16">
-          <div className="bg-[#161212] ps-10 py-7 rounded-md w-[300px] border border-[#161212] hover:border hover:border-red-500 transition-all">
+        <div className="flex gap-2 md:gap-10 mt-16">
+          <div className="bg-[#161212] ps-2 md:ps-10 py-7 rounded-md w-[300px] border border-[#161212] hover:border hover:border-red-500 transition-all">
             <h5 className="text-[#cacaca]">Email :</h5>
             <p className="text-white mt-3">webfuadtk@gmail.com</p>
           </div>
-          <div className="bg-[#161212] ps-10  py-7 rounded-md w-[300px] border border-[#161212] hover:border hover:border-red-500 transition-all">
+          <div className="bg-[#161212] ps-2 md:ps-10 py-7 rounded-md w-[300px] border border-[#161212] hover:border hover:border-red-500 transition-all">
             <h5 className="text-[#cacaca]">Phone :</h5>
             <p className="text-white mt-3">01756-867585</p>
           </div>
         </div>
         <div>
-          <h1 className="text-white text-3xl mt-10 border-b-4 border-red-500 w-[330px]">
+          <h1 className="text-white text-3xl mt-16 border-b-4 border-red-500 w-[330px]">
             Education Qualification
           </h1>
         </div>
-        <div className="flex gap-48 mt-5 text-[#cacaca]">
+        <div className="flex gap-48 mt-10 text-[#cacaca]">
           <div>
             <p>2015</p>
           </div>
@@ -64,10 +62,10 @@ const AboutMePage = () => {
         </div>
       </div>
 
-      <div className="w-[50%]">
+      <div className="md:w-[50%] mt-10 md:mt-0">
         <Service></Service>
         <Skill></Skill>
-        <a href="/src/assets/resume/fuad.pdf" download="fuad.pdf">
+        <a href="/fuad.pdf" download="fuad.pdf">
           <button className="text-white mt-10 flex items-center gap-3 border-b border-red-500 hover:border-white hover:text-red-500 transition-all px-6 py-2 rounded-lg">
             Resume <FaDownload />
           </button>

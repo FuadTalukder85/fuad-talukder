@@ -6,7 +6,7 @@ const Skill = () => {
       <h1 className="text-white text-3xl mt-10 border-b-4 border-red-500 w-[330px]">
         Skill
       </h1>
-      <div className="grid grid-cols-4 gap-4 mt-5 text-white">
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-5 text-white">
         <button className="bg-red-500 p-1 me-2">MERN Stack</button>
         <button className="bg-red-500 p-1 me-2">Javascript</button>
         <button className="bg-red-500 p-1 me-2">Typescript</button>

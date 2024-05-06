@@ -13,8 +13,8 @@ const ContactPage = () => {
       <div className="hero mt-5">
         <div className="hero-content w-full">
           <div className="card shrink-0 w-full max-w-5xl">
-            <form className="card-body">
-              <div className="flex gap-10 ">
+            <form className="">
+              <div className="md:flex gap-10 ">
                 <div className="w-full">
                   <div className="form-control w-full">
                     <label className="label">
@@ -67,20 +67,20 @@ const ContactPage = () => {
           </div>
         </div>
       </div>
-      <div className="flex gap-10 mt-16">
-        <div className="bg-[#161212] ps-10 py-7 rounded-md w-[300px] border border-[#161212] hover:border hover:border-red-500 transition-all">
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-2 md:gap-10 mt-16">
+        <div className="bg-[#161212] ps-2 md:ps-10 py-7 rounded-md md:w-[300px] border border-[#161212] hover:border hover:border-red-500 transition-all">
           <h5 className="text-[#cacaca]">Email :</h5>
           <p className="text-white mt-3">webfuadtk@gmail.com</p>
         </div>
-        <div className="bg-[#161212] ps-10  py-7 rounded-md w-[300px] border border-[#161212] hover:border hover:border-red-500 transition-all">
+        <div className="bg-[#161212] ps-2 md:ps-10 py-7 rounded-md md:w-[300px] border border-[#161212] hover:border hover:border-red-500 transition-all">
           <h5 className="text-[#cacaca]">Phone :</h5>
           <p className="text-white mt-3">01756-867585</p>
         </div>
-        <div className="bg-[#161212] ps-10  py-7 rounded-md w-[300px] border border-[#161212] hover:border hover:border-red-500 transition-all">
+        <div className="bg-[#161212] ps-2 md:ps-10 py-7 rounded-md md:w-[300px] border border-[#161212] hover:border hover:border-red-500 transition-all">
           <h5 className="text-[#cacaca]">Address :</h5>
           <p className="text-white mt-3">Kashipur, Narayanganj</p>
         </div>
-        <div className="bg-[#161212] ps-10  py-7 rounded-md w-[300px] border border-[#161212] hover:border hover:border-red-500 transition-all">
+        <div className="bg-[#161212] ps-2 md:ps-10 py-7 rounded-md md:w-[300px] border border-[#161212] hover:border hover:border-red-500 transition-all">
           <h5 className="text-[#cacaca]">Follow :</h5>
           <p className="text-white mt-3 flex gap-3">
             <FaGithub /> <CiLinkedin /> <FaSquareInstagram />
