@@ -68,7 +68,7 @@ const AboutMePage = () => {
         <Service></Service>
         <Skill></Skill>
         <a href="/src/assets/resume/fuad.pdf" download="fuad.pdf">
-          <button className="text-white mt-10 flex items-center gap-3 border-b-4 border-red-500 hover:border-white hover:text-red-500 transition-all px-6 py-2 rounded-lg">
+          <button className="text-white mt-10 flex items-center gap-3 border-b border-red-500 hover:border-white hover:text-red-500 transition-all px-6 py-2 rounded-lg">
             Resume <FaDownload />
           </button>
         </a>
