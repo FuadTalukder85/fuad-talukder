@@ -18,7 +18,7 @@ const Skill = () => {
         <button className="bg-red-500 p-1 me-2">React Hook Form</button>
         <button className="bg-red-500 p-1 me-2">Zod Validation</button>
         <button className="bg-red-500 p-1 me-2">Framer Motion</button>
-        <button className="bg-red-500 p-1 me-2">React Components</button>
+        <button className="bg-red-500 p-1 me-2">React Component</button>
       </div>
     </div>
   );

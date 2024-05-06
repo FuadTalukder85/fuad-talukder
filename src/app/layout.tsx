@@ -18,9 +18,10 @@ export default function RootLayout({
   return (
     <html lang="en" data-theme="cupcake">
       <body className={inter.className}>
-        {" "}
-        <SideBar>{children}</SideBar>
-        {/* <div>{children}</div> */}
+        <div className="md:min-w-[1280px] lg:max-w-[1980px]">
+          <SideBar>{children}</SideBar>
+          {/* <div>{children}</div> */}
+        </div>
       </body>
     </html>
   );

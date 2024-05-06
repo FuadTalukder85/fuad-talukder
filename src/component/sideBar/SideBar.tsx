@@ -12,7 +12,7 @@ const SideBar = ({ children }: TChildren) => {
     <div>
       <div className="drawer lg:drawer-open">
         <input id="my-drawer-2" type="checkbox" className="drawer-toggle" />
-        <div className="drawer-content flex flex-col items-center justify-center bg-[#1C2023]">
+        <div className="drawer-content flex flex-col bg-[#1C2023]">
           {/* <HomePage children={children}></HomePage> */}
           {children}
           <label
