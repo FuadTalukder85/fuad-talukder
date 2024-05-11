@@ -2,12 +2,12 @@ import Image from "next/image";
 import foodsphere from "../../assets/project/foodsphere.jpg";
 import GrocerEase from "../../assets/project/GrocerEase.jpg";
 import { FaDownload } from "react-icons/fa6";
-const PortfolioPage = () => {
+const ProjectPage = () => {
   return (
     <div className="p-10">
       <div className="flex justify-between md:pe-28">
         <h1 className="text-white text-3xl mt-10 border-b-4 border-red-500 md:w-[330px]">
-          Portfolio
+          Projects
         </h1>
         <a href="/fuad.pdf" download="fuad.pdf">
           <button className="text-white mt-10 flex items-center gap-3 border-b border-red-500 hover:border-white hover:text-red-500 transition-all px-6 py-2 rounded-lg">
@@ -84,4 +84,4 @@ const PortfolioPage = () => {
   );
 };
 
-export default PortfolioPage;
+export default ProjectPage;

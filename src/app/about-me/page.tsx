@@ -1,11 +1,15 @@
 import Service from "@/component/service/Service";
 import Skill from "@/component/skill/Skill";
+import Link from "next/link";
 import { FaDownload } from "react-icons/fa6";
 const AboutMePage = () => {
   return (
     <div className="md:flex gap-20 p-10">
       <div className="md:w-[50%]">
-        <p className="mt-10 md:mt-0 text-[#cacaca]">
+        <h1 className="text-white text-3xl border-b-4 border-red-500 md:w-[330px]">
+          About Me
+        </h1>
+        <p className="mt-10 text-[#cacaca]">
           <span className="text-white">Hello, This is Fuad,</span> Complete
           Diploma in Computer. I am specialized in web design, Frontend
           technology and dynamic sector, It,s my passion. I am good at MERN
@@ -65,11 +69,18 @@ const AboutMePage = () => {
       <div className="md:w-[50%] mt-10 md:mt-0">
         <Service></Service>
         <Skill></Skill>
-        <a href="/fuad.pdf" download="fuad.pdf">
-          <button className="text-white mt-10 flex items-center gap-3 border-b border-red-500 hover:border-white hover:text-red-500 transition-all px-6 py-2 rounded-lg">
-            Resume <FaDownload />
-          </button>
-        </a>
+        <div className="flex gap-10">
+          <Link href="projects">
+            <button className="text-white mt-10 flex items-center gap-3 border-b border-red-500 hover:border-white hover:text-red-500 transition-all px-6 py-2 rounded-lg">
+              View Projects <FaDownload />
+            </button>
+          </Link>
+          <a href="/fuad.pdf" download="fuad.pdf">
+            <button className="text-white mt-10 flex items-center gap-3 border-b border-red-500 hover:border-white hover:text-red-500 transition-all px-6 py-2 rounded-lg">
+              Resume <FaDownload />
+            </button>
+          </a>
+        </div>
       </div>
     </div>
   );

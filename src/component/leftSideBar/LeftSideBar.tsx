@@ -23,10 +23,15 @@ const LeftSideBar = () => {
       </li>
       <li>
         <Link
-          href="portfolio"
+          href="projects"
           className="focus:text-[#cacaca] focus:bg-[#1C2023]"
         >
-          Portfolio
+          Projects
+        </Link>
+      </li>
+      <li>
+        <Link href="blog" className="focus:text-[#cacaca] focus:bg-[#1C2023]">
+          Blog
         </Link>
       </li>
       <li>
