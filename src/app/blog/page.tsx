@@ -1,11 +1,10 @@
 "use client";
 import { useForm, SubmitHandler } from "react-hook-form";
-import React, { useRef, useState } from "react";
+import React, { useState, useRef, useMemo } from "react";
 import JoditEditor from "jodit-react";
-// import ReactQuill from "react-quill";
-// import "react-quill/dist/quill.snow.css";
+import { addBlogs } from "@/utils/addBlogs";
 
-type Inputs = {
+export type Inputs = {
   names: string;
   title: string;
   description: string;
@@ -15,14 +14,23 @@ const BlogPage = () => {
   const editor = useRef(null);
   const [content, setContent] = useState("");
   console.log(content);
-  // const [value, setValue] = useState("");
-  // console.log(value);
+
   const {
     register,
     handleSubmit,
+    reset,
     formState: { errors },
   } = useForm<Inputs>();
-  const onSubmit: SubmitHandler<Inputs> = (data) => console.log(data);
+
+  const onSubmit: SubmitHandler<Inputs> = async (data) => {
+    try {
+      await addBlogs(data, content);
+      reset();
+    } catch (err: any) {
+      console.error(err.message);
+      throw new Error(err.message);
+    }
+  };
 
   return (
     <div className="mt-5 w-[50%] mx-auto">
@@ -52,13 +60,12 @@ const BlogPage = () => {
             </div>
           </div>
           {/* comment */}
-          <div className="form-control w-full md:mt-0">
+          <div className="form-control w-full md:mt-0 bg-white">
             <JoditEditor
               ref={editor}
               value={content}
               onBlur={(newContent) => setContent(newContent)}
             />
-            {/* <ReactQuill theme="snow" value={value} onChange={setValue} /> */}
             {errors.description && <span>{errors.description.message}</span>}
           </div>
 

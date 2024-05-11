@@ -1,6 +1,7 @@
+import { Inputs } from "@/app/(dashboardLayout)/dashboard/addProject/page";
 import Image from "next/image";
 import { FaDownload } from "react-icons/fa6";
-const ProjectsCard = ({ allProjects }) => {
+const ProjectsCard = ({ allProjects }: { allProjects: Inputs[] }) => {
   return (
     <div className="p-10">
       <div className="flex justify-between md:pe-28">
