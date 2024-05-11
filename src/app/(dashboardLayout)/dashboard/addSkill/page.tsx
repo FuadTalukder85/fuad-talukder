@@ -4,6 +4,7 @@ import { useForm, SubmitHandler } from "react-hook-form";
 
 export type Inputs = {
   skill: string;
+  _id: string;
 };
 const AddSkill = () => {
   const {
@@ -31,11 +32,15 @@ const AddSkill = () => {
             {/* skill */}
             <div className="form-control w-full mt-3">
               <input
-                {...register("skill", { required: "Name is required" })}
+                {...register("skill", { required: "Skill is required" })}
                 placeholder="Skill"
                 className="w-full border py-1 px-3"
               />
-              {errors.skill && <span>{errors.skill.message}</span>}
+              {errors.skill && (
+                <span className="text-red-500 mt-2">
+                  {errors.skill.message}
+                </span>
+              )}
             </div>
           </div>
 

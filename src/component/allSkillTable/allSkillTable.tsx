@@ -2,8 +2,9 @@
 import { MdEditSquare } from "react-icons/md";
 import { AiFillDelete } from "react-icons/ai";
 import Swal from "sweetalert2";
+import { Inputs } from "@/app/(dashboardLayout)/dashboard/addSkill/page";
 
-const AllSkillTable = ({ allSkills }) => {
+const AllSkillTable = ({ allSkills }: { allSkills: Inputs[] }) => {
   const handleDelete = (_id: string) => {
     Swal.fire({
       title: "Are you want to delete this skill?",
@@ -45,7 +46,9 @@ const AllSkillTable = ({ allSkills }) => {
                 {allSkill.skill}
               </button>
               <div className="flex gap-5 text-4xl">
-                <MdEditSquare />
+                <button>
+                  <MdEditSquare />
+                </button>
                 <button onClick={() => handleDelete(allSkill._id)}>
                   {/* <h1 className="text-white">{allSkill._id}</h1> */}
                   <AiFillDelete />
