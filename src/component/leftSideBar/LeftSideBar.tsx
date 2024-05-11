@@ -15,7 +15,7 @@ const LeftSideBar = () => {
       </p>
       <li className="mt-10">
         <Link
-          href="about-me"
+          href="/about-me"
           className="focus:text-[#cacaca] focus:bg-[#1C2023]"
         >
           About me
@@ -23,20 +23,20 @@ const LeftSideBar = () => {
       </li>
       <li>
         <Link
-          href="projects"
+          href="/projects"
           className="focus:text-[#cacaca] focus:bg-[#1C2023]"
         >
           Projects
         </Link>
       </li>
       <li>
-        <Link href="blog" className="focus:text-[#cacaca] focus:bg-[#1C2023]">
+        <Link href="/blog" className="focus:text-[#cacaca] focus:bg-[#1C2023]">
           Blog
         </Link>
       </li>
       <li>
         <Link
-          href="contact"
+          href="/contact"
           className="focus:text-[#cacaca] focus:bg-[#1C2023]"
         >
           Contact
