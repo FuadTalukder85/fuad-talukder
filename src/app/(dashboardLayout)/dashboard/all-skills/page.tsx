@@ -5,7 +5,7 @@ const AllSkills = async () => {
   const res = await fetch(`http://localhost:5000/skills`, {
     method: "GET",
     next: {
-      revalidate: 30,
+      revalidate: 10,
     },
   });
   const allSkills = await res.json();
