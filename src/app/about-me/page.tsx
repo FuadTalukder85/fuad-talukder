@@ -72,7 +72,7 @@ const AboutMePage = () => {
         <div className="flex gap-10">
           <Link href="projects">
             <button className="text-white mt-10 flex items-center gap-3 border-b border-red-500 hover:border-white hover:text-red-500 transition-all px-6 py-2 rounded-lg">
-              View Projects <FaDownload />
+              View Projects
             </button>
           </Link>
           <a href="/fuad.pdf" download="fuad.pdf">

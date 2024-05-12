@@ -42,6 +42,16 @@ const LeftSideBar = () => {
           Contact
         </Link>
       </li>
+      <li>
+        <Link
+          href="/dashboard"
+          className="focus:text-[#cacaca] focus:bg-[#1C2023]"
+        >
+          Dashboard
+        </Link>
+      </li>
+
+      <div className="divider divider-error mt-10">~</div>
     </div>
   );
 };
