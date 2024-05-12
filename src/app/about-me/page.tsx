@@ -1,11 +1,35 @@
+"use client";
 import Service from "@/component/service/Service";
 import Skill from "@/component/skill/Skill";
 import Link from "next/link";
 import { FaDownload } from "react-icons/fa6";
+import { motion } from "framer-motion";
 const AboutMePage = () => {
+  const divIntro = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        duration: 1.5,
+      },
+    },
+  };
+  const leftContect = {
+    hidden: { opacity: 0, x: 0 },
+    visible: { opacity: 1, x: 0 },
+  };
+  // const rightContect = {
+  //   hidden: { opacity: 0, x: 500 },
+  //   visible: { opacity: 1, x: 0 },
+  // };
   return (
-    <div className="md:flex gap-20 p-10">
-      <div className="md:w-[50%]">
+    <motion.div
+      varients={divIntro}
+      initial="hidden"
+      animate="visible"
+      className="md:flex gap-20 p-10"
+    >
+      <motion.div variants={leftContect} className="md:w-[50%]">
         <h1 className="text-white text-3xl border-b-4 border-red-500 md:w-[330px]">
           About Me
         </h1>
@@ -64,9 +88,9 @@ const AboutMePage = () => {
             <p>National Polytechnic Institute, Faridpur</p>
           </div>
         </div>
-      </div>
+      </motion.div>
 
-      <div className="md:w-[50%] mt-10 md:mt-0">
+      <motion.div variants={leftContect} className="md:w-[50%] mt-10 md:mt-0">
         <Service></Service>
         <Skill></Skill>
         <div className="flex gap-10">
@@ -81,8 +105,8 @@ const AboutMePage = () => {
             </button>
           </a>
         </div>
-      </div>
-    </div>
+      </motion.div>
+    </motion.div>
   );
 };
 
