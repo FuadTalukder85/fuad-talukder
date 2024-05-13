@@ -1,6 +1,7 @@
+import { Inputs } from "@/app/(dashboardLayout)/dashboard/addSkill/page";
 import React from "react";
 
-const Skill = ({ allSkills }) => {
+const Skill = ({ allSkills }: { allSkills: Inputs[] }) => {
   return (
     <div>
       <h1 className="text-white text-3xl mt-10 border-b-4 border-red-500 w-[330px]">

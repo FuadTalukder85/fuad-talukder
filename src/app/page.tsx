@@ -25,7 +25,7 @@ const HomePage = () => {
 
   return (
     <div>
-      <AboutMePage allSkills={allSkills}></AboutMePage>
+      {allSkills ? <AboutMePage allSkills={allSkills} /> : <p>Loading...</p>}
     </div>
   );
 };

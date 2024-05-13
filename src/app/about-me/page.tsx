@@ -5,7 +5,8 @@ import Link from "next/link";
 import { FaDownload } from "react-icons/fa6";
 import { motion, AnimatePresence } from "framer-motion";
 import "../about-me/aboutMe.css";
-const AboutMePage = ({ allSkills }) => {
+import { Inputs } from "../(dashboardLayout)/dashboard/addSkill/page";
+const AboutMePage = ({ allSkills }: { allSkills: Inputs[] }) => {
   return (
     <AnimatePresence mode="wait">
       <motion.div
