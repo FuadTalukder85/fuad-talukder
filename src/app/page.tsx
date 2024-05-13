@@ -3,12 +3,12 @@ import React, { useEffect, useState } from "react";
 import AboutMePage from "./about-me/page";
 
 const HomePage = () => {
-  const [allSkills, setallSkills] = useState(null);
+  const [allSkill, setallSkill] = useState(null);
 
   const fetchData = async () => {
-    const res = await fetch(`http://localhost:5000/skills`);
+    const res = await fetch(`https://fuad.onrender.com/skills`);
     const data = await res.json();
-    setallSkills(data);
+    setallSkill(data);
   };
 
   useEffect(() => {
@@ -21,11 +21,11 @@ const HomePage = () => {
 
     return () => clearTimeout("");
   }, []);
-  console.log(allSkills);
+  // console.log(allSkills);
 
   return (
     <div>
-      {allSkills ? <AboutMePage allSkills={allSkills} /> : <p>Loading...</p>}
+      {allSkill ? <AboutMePage skills={allSkill} /> : <p>Loading...</p>}
     </div>
   );
 };

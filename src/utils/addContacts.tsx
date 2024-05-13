@@ -1,7 +1,7 @@
 import { Inputs } from "@/app/contact/page";
 
 export const addContacts = async (data: Inputs) => {
-  const res = await fetch(`http://localhost:5000/create-contact`, {
+  const res = await fetch(`https://fuad.onrender.com/create-contact`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",

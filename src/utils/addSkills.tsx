@@ -3,7 +3,7 @@
 import { Inputs } from "@/app/(dashboardLayout)/dashboard/addSkill/page";
 
 export const addSkills = async (data: Inputs) => {
-  const res = await fetch(`http://localhost:5000/create-skills`, {
+  const res = await fetch(`https://fuad.onrender.com/create-skills`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",

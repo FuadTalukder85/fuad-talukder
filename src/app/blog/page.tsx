@@ -7,7 +7,7 @@ const BlogPage = () => {
   const [allBlogs, setAllBlogs] = useState(null);
 
   const fetchData = async () => {
-    const res = await fetch(`http://localhost:5000/blogs`);
+    const res = await fetch(`https://fuad.onrender.com/blogs`);
     const data = await res.json();
     setAllBlogs(data);
   };

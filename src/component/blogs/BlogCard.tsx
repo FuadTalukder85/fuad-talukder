@@ -5,8 +5,8 @@ const BlogCard = ({ allBlogs }: { allBlogs: Inputs[] }) => {
   return (
     <div className="p-10">
       <div className="grid md:grid-cols-4 gap-5">
-        {allBlogs.map((blog) => (
-          <div key={blog._id} className="md:border-r-2 border-red-500 p-5">
+        {allBlogs.map((blog, index) => (
+          <div key={index} className="md:border-r-2 border-red-500 p-5">
             <div>
               <h1 className="text-red-500 font-bold">
                 Post by :{" "}

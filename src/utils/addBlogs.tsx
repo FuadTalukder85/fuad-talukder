@@ -1,7 +1,7 @@
 import { Inputs } from "@/component/blogs/BlogForm";
 
 export const addBlogs = async (data: Inputs, content: string) => {
-  const res = await fetch(`http://localhost:5000/create-blog`, {
+  const res = await fetch(`https://fuad.onrender.com/create-blog`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",

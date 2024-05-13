@@ -1,7 +1,9 @@
-"use client";
+import React, { useState, useRef, useMemo } from "react";
 import { useForm, SubmitHandler } from "react-hook-form";
-import React, { useState, useRef } from "react";
-import JoditEditor from "jodit-react";
+// import JoditEditor from "jodit-react";
+// import FroalaEditor from "react-froala-wysiwyg";
+// import "froala-editor/css/froala_style.min.css";
+// import "froala-editor/css/froala_editor.pkgd.min.css";
 import { addBlogs } from "@/utils/addBlogs";
 
 export type Inputs = {
@@ -12,9 +14,16 @@ export type Inputs = {
   content: string;
 };
 
-const BlogForm = () => {
-  const editor = useRef(null);
+const BlogForm = ({ placeholder }: { placeholder?: string }) => {
+  // const editor = useRef(null);
   const [content, setContent] = useState("");
+  // const config = useMemo(
+  //   () => ({
+  //     readonly: false,
+  //     placeholder: placeholder || "Start typing...", // Dynamic placeholder
+  //   }),
+  //   [placeholder]
+  // );
 
   const {
     register,
@@ -48,7 +57,9 @@ const BlogForm = () => {
                 placeholder="Your name"
                 className="w-full border py-1 px-3"
               />
-              {errors.names && <span>{errors.names.message}</span>}
+              {errors.names && (
+                <span className="text-red-500">{errors.names.message}</span>
+              )}
             </div>
             {/* title */}
             <div className="form-control w-full">
@@ -57,17 +68,26 @@ const BlogForm = () => {
                 placeholder="Your title"
                 className="w-full border py-1 px-3"
               />
-              {errors.title && <span>{errors.title.message}</span>}
+              {errors.title && (
+                <span className="text-red-500">{errors.title.message}</span>
+              )}
             </div>
           </div>
           {/* comment */}
-          <div className="form-control w-full mt-3 bg-white">
-            <JoditEditor
+          <div className="form-control w-full mt-3">
+            {/* <JoditEditor
               ref={editor}
               value={content}
               onBlur={(newContent) => setContent(newContent)}
-            />
-            {errors.description && <span>{errors.description.message}</span>}
+              onChange={(newContent) => setContent(newContent)}
+            /> */}
+            {/* <FroalaEditor /> */}
+            <textarea
+              {...register("description", { required: "Title is Description" })}
+            ></textarea>
+            {errors.description && (
+              <span className="text-red-500">{errors.description.message}</span>
+            )}
           </div>
 
           <div className="form-control mt-5 md:mt-0">

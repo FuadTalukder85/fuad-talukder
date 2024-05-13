@@ -3,7 +3,7 @@
 import { Inputs } from "@/app/(dashboardLayout)/dashboard/addProject/page";
 
 export const addProjects = async (data: Inputs) => {
-  const res = await fetch(`http://localhost:5000/create-projects`, {
+  const res = await fetch(`https://fuad.onrender.com/create-projects`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",

@@ -18,7 +18,7 @@ const AllSkillTable = ({ allSkills }: { allSkills: Inputs[] }) => {
     }).then(async (result) => {
       if (result.isConfirmed) {
         try {
-          await fetch(`http://localhost:5000/skills/${_id}`, {
+          await fetch(`hhttps://fuad.onrender.com/skills/${_id}`, {
             method: "DELETE",
           });
           Swal.fire({
@@ -51,8 +51,8 @@ const AllSkillTable = ({ allSkills }: { allSkills: Inputs[] }) => {
         All Skills
       </h1>
       <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mt-10 text-white ">
-        {allSkills.map((allSkill) => (
-          <div key={allSkill._id}>
+        {allSkills.map((allSkill, index) => (
+          <div key={index}>
             <div className="flex gap-5">
               <button className="bg-red-500 p-1 w-[200px]">
                 {allSkill.skill}

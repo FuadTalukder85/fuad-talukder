@@ -6,7 +6,7 @@ import { FaDownload } from "react-icons/fa6";
 import { motion, AnimatePresence } from "framer-motion";
 import "../about-me/aboutMe.css";
 import { Inputs } from "../(dashboardLayout)/dashboard/addSkill/page";
-const AboutMePage = ({ allSkills }: { allSkills: Inputs[] }) => {
+const AboutMePage = ({ skills }: { skills: Inputs[] }) => {
   return (
     <AnimatePresence mode="wait">
       <motion.div
@@ -88,7 +88,7 @@ const AboutMePage = ({ allSkills }: { allSkills: Inputs[] }) => {
 
         <div className="md:w-[50%] mt-10 md:mt-0">
           <Service></Service>
-          <Skill allSkills={allSkills}></Skill>
+          <Skill skill={skills}></Skill>
           <div className="flex gap-10">
             <Link href="projects">
               <button className="text-white mt-10 flex items-center gap-3 border-b border-red-500 hover:border-white hover:text-red-500 transition-all px-6 py-2 rounded-lg">

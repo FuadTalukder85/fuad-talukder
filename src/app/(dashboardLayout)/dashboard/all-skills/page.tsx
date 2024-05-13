@@ -6,7 +6,7 @@ const AllSkills = () => {
   const [allSkills, setallSkills] = useState(null);
 
   const fetchData = async () => {
-    const res = await fetch(`http://localhost:5000/skills`);
+    const res = await fetch(`https://fuad.onrender.com/skills`);
     const data = await res.json();
     setallSkills(data);
   };
