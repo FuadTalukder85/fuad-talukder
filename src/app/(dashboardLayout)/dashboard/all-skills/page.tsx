@@ -1,18 +1,31 @@
+"use client";
 import AllSkillTable from "@/component/allSkillTable/allSkillTable";
-import React from "react";
+import { useEffect, useState } from "react";
 
-const AllSkills = async () => {
-  const res = await fetch(`http://localhost:5000/skills`, {
-    method: "GET",
-    next: {
-      revalidate: 10,
-    },
-  });
-  const allSkills = await res.json();
+const AllSkills = () => {
+  const [allSkills, setallSkills] = useState(null);
+
+  const fetchData = async () => {
+    const res = await fetch(`http://localhost:5000/skills`);
+    const data = await res.json();
+    setallSkills(data);
+  };
+
+  useEffect(() => {
+    const fetchDataAndRepeat = async () => {
+      await fetchData();
+      setTimeout(fetchDataAndRepeat, 5000);
+    };
+
+    fetchDataAndRepeat();
+
+    return () => clearTimeout("");
+  }, []);
+
   console.log(allSkills);
   return (
     <div>
-      <AllSkillTable allSkills={allSkills}></AllSkillTable>
+      {allSkills ? <AllSkillTable allSkills={allSkills} /> : <p>Loading...</p>}
     </div>
   );
 };

@@ -1,5 +1,6 @@
 "use client";
 import { addSkills } from "@/utils/addSkills";
+import Link from "next/link";
 import { useForm, SubmitHandler } from "react-hook-form";
 
 export type Inputs = {
@@ -25,6 +26,11 @@ const AddSkill = () => {
   };
   return (
     <div className="mt-5 w-[40%] mx-auto">
+      <Link href="/dashboard">
+        <button className="text-white mt-10 flex items-center gap-3 border-b border-red-500 hover:border-white hover:text-red-500 transition-all px-6 py-2 rounded-lg">
+          Return to Dashboard
+        </button>
+      </Link>
       <h1 className="text-white text-3xl mt-10">Skill :</h1>
       <div className="card mx-auto shrink-0 w-full shadow-xl border p-5 rounded-xl mt-8">
         <form onSubmit={handleSubmit(onSubmit)}>

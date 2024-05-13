@@ -14,10 +14,7 @@ const LeftSideBar = () => {
         Junior Frontend Developer
       </p>
       <li className="mt-10">
-        <Link
-          href="/about-me"
-          className="focus:text-[#cacaca] focus:bg-[#1C2023]"
-        >
+        <Link href="/" className="focus:text-[#cacaca] focus:bg-[#1C2023]">
           About me
         </Link>
       </li>

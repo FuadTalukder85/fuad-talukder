@@ -1,4 +1,4 @@
-import { Inputs } from "@/app/blog/page";
+import { Inputs } from "@/component/blogs/BlogForm";
 
 export const addBlogs = async (data: Inputs, content: string) => {
   const res = await fetch(`http://localhost:5000/create-blog`, {

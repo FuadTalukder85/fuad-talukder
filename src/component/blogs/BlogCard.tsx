@@ -16,7 +16,7 @@ const BlogCard = ({ allBlogs }: { allBlogs: Inputs[] }) => {
               </h1>
               <h1 className="text-red-500">{blog.title}</h1>
               <div
-                dangerouslySetInnerHTML={{ __html: blog.content }} // Corrected
+                dangerouslySetInnerHTML={{ __html: blog.content }}
                 className="text-white mt-3"
               />
             </div>
