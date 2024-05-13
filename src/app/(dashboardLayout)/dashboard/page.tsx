@@ -25,7 +25,7 @@ const Dasgboard = () => {
 
   return (
     <div className="p-10">
-      <div className="flex gap-10">
+      <div className="flex gap-3 md:gap-10">
         <Link href="/dashboard/addSkill">
           <button className="text-white mt-10 flex items-center gap-3 border-b border-red-500 hover:border-white hover:text-red-500 transition-all px-6 py-2 rounded-lg">
             Add Skill
