@@ -4,45 +4,26 @@ import Skill from "@/component/skill/Skill";
 import Link from "next/link";
 import { FaDownload } from "react-icons/fa6";
 import { motion, AnimatePresence } from "framer-motion";
-import "../page.css";
+import "../about-me/aboutMe.css";
 const AboutMePage = () => {
-  const divIntro = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        duration: 1.5,
-      },
-    },
-  };
-  const leftContect = {
-    hidden: { opacity: 0, x: 0 },
-    visible: { opacity: 1, x: 0 },
-  };
-
   return (
     <AnimatePresence mode="wait">
       <motion.div
         className="side-in"
-        initial={{ scaleY: 0 }}
-        animate={{ scaleY: 0 }}
-        exit={{ scaleY: 0 }}
+        initial={{ scaleX: 1 }}
+        animate={{ scaleX: 0 }}
+        exit={{ scaleX: 0 }}
         transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
       ></motion.div>
       <motion.div
         className="side-out"
-        initial={{ scaleY: 1 }}
-        animate={{ scaleY: 0 }}
-        exit={{ scaleY: 0 }}
+        initial={{ scaleX: 0 }}
+        animate={{ scaleX: 0 }}
+        exit={{ scaleX: 0 }}
         transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
       ></motion.div>
-      <motion.div
-        varients={divIntro}
-        initial="hidden"
-        animate="visible"
-        className="md:flex gap-20 p-10"
-      >
-        <motion.div variants={leftContect} className="md:w-[50%]">
+      <div className="md:flex gap-20 p-10">
+        <div className="md:w-[50%]">
           <h1 className="text-white text-3xl border-b-4 border-red-500 md:w-[330px]">
             About Me
           </h1>
@@ -102,9 +83,9 @@ const AboutMePage = () => {
               <p>National Polytechnic Institute, Faridpur</p>
             </div>
           </div>
-        </motion.div>
+        </div>
 
-        <motion.div variants={leftContect} className="md:w-[50%] mt-10 md:mt-0">
+        <div className="md:w-[50%] mt-10 md:mt-0">
           <Service></Service>
           <Skill></Skill>
           <div className="flex gap-10">
@@ -119,8 +100,8 @@ const AboutMePage = () => {
               </button>
             </a>
           </div>
-        </motion.div>
-      </motion.div>
+        </div>
+      </div>
     </AnimatePresence>
   );
 };

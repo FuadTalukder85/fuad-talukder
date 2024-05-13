@@ -1,0 +1,18 @@
+.project-in {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(to right, #66554b, #4c4965);
+  transform-origin: top;
+}
+.project-out {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(to right, #66554b, #4c4965);
+  transform-origin: bottom;
+}
