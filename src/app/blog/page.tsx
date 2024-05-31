@@ -7,7 +7,7 @@ const BlogPage = () => {
   const [allBlogs, setAllBlogs] = useState(null);
 
   const fetchData = async () => {
-    const res = await fetch(`https://fuad.onrender.com/blogs`);
+    const res = await fetch(`https://fuad-talukder-backend.vercel.app/blogs`);
     const data = await res.json();
     setAllBlogs(data);
   };

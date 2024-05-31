@@ -18,9 +18,12 @@ const AllSkillTable = ({ allSkills }: { allSkills: Inputs[] }) => {
     }).then(async (result) => {
       if (result.isConfirmed) {
         try {
-          await fetch(`hhttps://fuad.onrender.com/skills/${_id}`, {
-            method: "DELETE",
-          });
+          await fetch(
+            `https://fuad-talukder-backend.vercel.app/skills/${_id}`,
+            {
+              method: "DELETE",
+            }
+          );
           Swal.fire({
             title: "Deleted!",
             text: "Your skill has been deleted.",

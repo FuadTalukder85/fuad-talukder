@@ -6,7 +6,7 @@ const AllSkills = () => {
   const [allSkills, setallSkills] = useState(null);
 
   const fetchData = async () => {
-    const res = await fetch(`https://fuad.onrender.com/skills`);
+    const res = await fetch(`https://fuad-talukder-backend.vercel.app/skills`);
     const data = await res.json();
     setallSkills(data);
   };

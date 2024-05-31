@@ -2,7 +2,7 @@ import ProjectsCard from "@/component/projectsCard/ProjectsCard";
 import React from "react";
 
 const Projects = async () => {
-  const res = await fetch(`https://fuad.onrender.com/projects`, {
+  const res = await fetch(`https://fuad-talukder-backend.vercel.app/projects`, {
     method: "GET",
     next: {
       revalidate: 10,

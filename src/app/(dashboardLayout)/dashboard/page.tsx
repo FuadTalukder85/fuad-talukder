@@ -7,7 +7,7 @@ const Dasgboard = () => {
   const [allContacts, setAllContacts] = useState(null);
 
   const fetchData = async () => {
-    const res = await fetch(`https://fuad.onrender.com/contact`);
+    const res = await fetch(`https://fuad-talukder-backend.vercel.app/contact`);
     const data = await res.json();
     setAllContacts(data);
   };
