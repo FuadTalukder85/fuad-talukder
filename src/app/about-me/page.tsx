@@ -95,7 +95,10 @@ const AboutMePage = ({ skills }: { skills: Inputs[] }) => {
                 View Projects
               </button>
             </Link>
-            <a href="/fuad.pdf" download="fuad.pdf">
+            <a
+              href="/Fuad-Talukder-Front-end-developer.pdf"
+              download="Fuad-Talukder-Front-end-developer.pdf"
+            >
               <button className="text-white mt-10 flex items-center gap-3 border-b border-red-500 hover:border-white hover:text-red-500 transition-all px-6 py-2 rounded-lg">
                 Resume <FaDownload />
               </button>
