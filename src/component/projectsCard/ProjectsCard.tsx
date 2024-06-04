@@ -46,20 +46,17 @@ const ProjectsCard = ({ allProjects }: { allProjects: Inputs[] }) => {
               ></Image>
               <div className="text-[#cacaca] mt-8 px-4 pb-6">
                 <div className="flex justify-between items-center">
-                  <h5 className="text-xl text-white">FoodShpere</h5>
+                  <h5 className="text-xl text-white">
+                    {allProject.projectName}
+                  </h5>
                   <button className="text-white flex items-center gap-3 border border-red-500 hover:border-white hover:text-red-500 transition-all px-6 py-2 rounded-lg">
-                    MERN Stack
+                    {allProject.technology}
                   </button>
                 </div>
-                <h5 className="mt-3">
-                  Live url :{" "}
-                  <a
-                    href="https://willowy-sunflower-a54a29.netlify.app"
-                    className="text-red-500"
-                  >
-                    willowy-sunflower-a54a29.netlify.app
-                  </a>
-                </h5>
+                <h5 className="mt-3">Live url : </h5>
+                <a href={allProject.liveUrl} className="text-red-500">
+                  {allProject.liveUrl}
+                </a>
               </div>
             </div>
           ))}
