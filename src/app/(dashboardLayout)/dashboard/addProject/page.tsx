@@ -7,6 +7,9 @@ export type Inputs = {
   img: string;
   projectName: string;
   technology: string;
+  technologyUsed: string;
+  frontendGithub: string;
+  backendGithub: string;
   liveUrl: string;
   _id: string;
 };
@@ -74,6 +77,50 @@ const AddProject = () => {
               {errors.technology && (
                 <span className="text-red-500 mt-2">
                   {errors.technology.message}
+                </span>
+              )}
+            </div>
+            <div className="form-control w-full mt-3">
+              <input
+                {...register("technologyUsed", {
+                  required: "TechnologyUsed is required",
+                })}
+                placeholder="Technology used"
+                className="w-full border py-1 px-3"
+              />
+              {errors.technologyUsed && (
+                <span className="text-red-500 mt-2">
+                  {errors.technologyUsed.message}
+                </span>
+              )}
+            </div>
+            {/* github url front end */}
+            <div className="form-control w-full mt-3">
+              <input
+                {...register("frontendGithub", {
+                  required: "Frontend end Github url is required",
+                })}
+                placeholder="Front end Github"
+                className="w-full border py-1 px-3"
+              />
+              {errors.frontendGithub && (
+                <span className="text-red-500 mt-2">
+                  {errors.frontendGithub.message}
+                </span>
+              )}
+            </div>
+            {/* github url front end */}
+            <div className="form-control w-full mt-3">
+              <input
+                {...register("backendGithub", {
+                  required: "Backend end Github url is required",
+                })}
+                placeholder="Backend end Github"
+                className="w-full border py-1 px-3"
+              />
+              {errors.backendGithub && (
+                <span className="text-red-500 mt-2">
+                  {errors.backendGithub.message}
                 </span>
               )}
             </div>
