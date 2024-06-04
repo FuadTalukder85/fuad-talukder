@@ -10,6 +10,7 @@ import { FaFacebook } from "react-icons/fa";
 import { FaGithubSquare } from "react-icons/fa";
 
 import "./Sidebar.css";
+import Link from "next/link";
 
 type TChildren = {
   children: ReactNode;
@@ -66,18 +67,27 @@ const SideBar = ({ children }: TChildren) => {
             <div className="mt-10">
               <h1>Connect With Me</h1>
               <div className="mt-5">
-                <button className="border border-red-500 p-1 rounded-full mr-3">
-                  <FaGithubSquare />
-                </button>
-                <button className="border border-red-500 p-1 rounded-full mr-3">
-                  <FaLinkedin />
-                </button>
-                <button className="border border-red-500 p-1 rounded-full mr-3">
-                  <FaInstagramSquare />
-                </button>
-                <button className="border border-red-500 p-1 rounded-full mr-3">
-                  <FaFacebook />
-                </button>
+                <Link href="https://github.com/FuadTalukder85">
+                  <button className="border border-red-500 p-1 rounded-full mr-3">
+                    <FaGithubSquare />
+                  </button>
+                </Link>
+                <Link href="https://www.linkedin.com/in/fuadtalukder">
+                  <button className="border border-red-500 p-1 rounded-full mr-3">
+                    <FaLinkedin />
+                  </button>
+                </Link>
+                <Link href="https://www.instagram.com/fuad_talukder">
+                  <button className="border border-red-500 p-1 rounded-full mr-3">
+                    <FaInstagramSquare />
+                  </button>
+                </Link>
+
+                <Link href="https://www.facebook.com/fuad.hasan.tk">
+                  <button className="border border-red-500 p-1 rounded-full mr-3">
+                    <FaFacebook />
+                  </button>
+                </Link>
               </div>
             </div>
           </ul>

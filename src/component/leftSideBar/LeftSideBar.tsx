@@ -11,7 +11,7 @@ const LeftSideBar = () => {
       </div>
       <h1 className="mt-5 text-3xl flex justify-center">Fuad Talukder</h1>
       <p className="flex justify-center text-[#cacaca]">
-        Junior Frontend Developer
+        Jr. Frontend Developer
       </p>
       <li className="mt-10">
         <Link href="/" className="focus:text-[#cacaca] focus:bg-[#1C2023]">
