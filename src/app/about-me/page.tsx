@@ -1,6 +1,6 @@
 "use client";
-import Service from "@/component/service/Service";
-import Skill from "@/component/skill/Skill";
+// import Service from "@/component/service/Service";
+// import Skill from "@/component/skill/Skill";
 import Link from "next/link";
 import { FaDownload } from "react-icons/fa6";
 import { motion, AnimatePresence } from "framer-motion";
@@ -23,7 +23,44 @@ const AboutMePage = ({ skills }: { skills: Inputs[] }) => {
         exit={{ scaleX: 0 }}
         transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
       ></motion.div>
-      <div className="md:flex gap-20 p-10">
+      <div className="flex justify-center items-center h-screen text-white">
+        <div className="px-96">
+          {/* <p className="text-center">Hello I am,</p> */}
+          <h3 className="text-5xl font-bold tracking-[5px] mt-5 text-center">
+            Frontend Developer
+          </h3>
+          <p className="mt-4 text-[#EAE727] text-center text-2xl">
+            Specialized in javascript, Typescript.
+          </p>
+          <p className="mt-4 text-[#EAE727] text-center text-2xl">
+            Specialized in React js, TNext js.
+          </p>
+          <p className="mt-4 text-[#EAE727] text-center text-2xl">
+            Specialized in Node js, Mongodb
+          </p>
+          <p className="mt-5 px-28 text-center">
+            Passionate about creating visually appealing, user-friendly
+            websites. Seeking opportunities to drive innovation, exceed client
+            expectations, and advance my career in web development.
+          </p>
+          <div className="flex gap-7 mt-10 justify-center">
+            <Link href="projects">
+              <button className="text-white flex items-center gap-3 border-b border-red-500 hover:border-white hover:text-red-500 transition-all px-6 py-2 rounded-lg">
+                View Projects
+              </button>
+            </Link>
+            <a
+              href="/Fuad-Talukder-Front-end-developer.pdf"
+              download="Fuad-Talukder-Front-end-developer.pdf"
+            >
+              <button className="text-white flex items-center gap-3 border-b border-red-500 hover:border-white hover:text-red-500 transition-all px-6 py-2 rounded-lg">
+                Resume <FaDownload />
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+      {/* <div className="md:flex gap-20 p-10">
         <div className="md:w-[50%]">
           <h1 className="text-white text-3xl border-b-4 border-red-500 md:w-[330px]">
             About Me
@@ -85,7 +122,7 @@ const AboutMePage = ({ skills }: { skills: Inputs[] }) => {
             </div>
           </div>
         </div>
-
+      
         <div className="md:w-[50%] mt-10 md:mt-0">
           <Service></Service>
           <Skill skill={skills}></Skill>
@@ -105,7 +142,7 @@ const AboutMePage = ({ skills }: { skills: Inputs[] }) => {
             </a>
           </div>
         </div>
-      </div>
+      </div> */}
     </AnimatePresence>
   );
 };
