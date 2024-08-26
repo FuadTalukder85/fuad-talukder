@@ -25,7 +25,7 @@ const SideBar = ({ children }: TChildren) => {
           type="checkbox"
           className="drawer-toggle hidden"
         />
-        <div className="drawer-content flex flex-col bg-[#1C2023]">
+        <div className="bg-img drawer-content flex flex-col bg-[#171719]">
           {children}
           <label
             htmlFor="my-drawer-2"

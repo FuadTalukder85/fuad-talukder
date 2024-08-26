@@ -43,7 +43,7 @@ const BlogForm = ({ placeholder }: { placeholder?: string }) => {
   };
 
   return (
-    <div className="mt-5 md:w-[50%] mx-auto p-5 md:p-0">
+    <div className="mt-5 md:w-[51%] mx-auto p-5 md:p-0">
       <h1 className="text-white text-3xl mt-10">
         Leave your valuable comment about me and my projects
       </h1>

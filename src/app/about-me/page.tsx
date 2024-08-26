@@ -4,8 +4,11 @@
 import Link from "next/link";
 import { FaDownload } from "react-icons/fa6";
 import { motion, AnimatePresence } from "framer-motion";
-import "../about-me/aboutMe.css";
 import { Inputs } from "../(dashboardLayout)/dashboard/addSkill/page";
+import { TypeAnimation } from "react-type-animation";
+import fuadLogo from "../../assets/logo/fuad-talukder.png";
+import "../about-me/aboutMe.css";
+import Image from "next/image";
 const AboutMePage = ({ skills }: { skills: Inputs[] }) => {
   return (
     <AnimatePresence mode="wait">
@@ -23,22 +26,49 @@ const AboutMePage = ({ skills }: { skills: Inputs[] }) => {
         exit={{ scaleX: 0 }}
         transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
       ></motion.div>
-      <div className="flex justify-center items-center h-screen text-white">
+      <div className="flex justify-center items-center h-screen text-[#f2ecff]">
         <div className="px-96">
+          <Image
+            className="mx-auto border border-red-500 p-3 rounded-full"
+            src={fuadLogo}
+            alt="fuadLogo"
+            width={70}
+            height={70}
+          ></Image>
           {/* <p className="text-center">Hello I am,</p> */}
-          <h3 className="text-5xl font-bold tracking-[5px] mt-5 text-center">
-            Frontend Developer
+          <h3 className="text-8xl font-bold tracking-[5px] text-center mt-8">
+            Fuad Talukder
           </h3>
-          <p className="mt-4 text-[#EAE727] text-center text-2xl">
+          <h3 className="text-2xl font-bold tracking-[5px] text-center mt-2">
+            Jr. Frontend Developer
+          </h3>
+
+          <TypeAnimation
+            className="mt-8 px-48 text-[#EAE727] text-center"
+            sequence={[
+              // Same substring at the start will only be typed out once, initially
+              "Specialized in javascript, Typescript...",
+              1000, // wait 1s before replacing "Mice" with "Hamsters"
+              "Specialized in React js, Next js...",
+              "Specialized in Node js, Mongodb...",
+              1000,
+            ]}
+            wrapper="span"
+            speed={50}
+            style={{ fontSize: "1.5em", display: "inline-block" }}
+            repeat={Infinity}
+          />
+
+          {/* <p className="mt-4 text-[#EAE727] text-center text-2xl">
             Specialized in javascript, Typescript.
-          </p>
-          <p className="mt-4 text-[#EAE727] text-center text-2xl">
-            Specialized in React js, TNext js.
+          </p> */}
+          {/* <p className="mt-4 text-[#EAE727] text-center text-2xl">
+            Specialized in React js, Next js.
           </p>
           <p className="mt-4 text-[#EAE727] text-center text-2xl">
             Specialized in Node js, Mongodb
-          </p>
-          <p className="mt-5 px-28 text-center">
+          </p> */}
+          <p className="mt-8 px-28 text-center text-[#f2ecff]">
             Passionate about creating visually appealing, user-friendly
             websites. Seeking opportunities to drive innovation, exceed client
             expectations, and advance my career in web development.
