@@ -6,7 +6,10 @@ import { FaDownload } from "react-icons/fa6";
 import { motion, AnimatePresence } from "framer-motion";
 import { Inputs } from "../(dashboardLayout)/dashboard/addSkill/page";
 import { TypeAnimation } from "react-type-animation";
-import fuadLogo from "../../assets/logo/fuad-talukder.png";
+// import fuadLogo from "../../assets/logo/fuad-talukder.png";
+import aboutMeImg01 from "../../assets/aboutMeImg/aboutMeImg01.png";
+import aboutMeImg02 from "../../assets/aboutMeImg/aboutMeImg02.png";
+import aboutMeImg03 from "../../assets/aboutMeImg/aboutMeImg03.png";
 import "../about-me/aboutMe.css";
 import Image from "next/image";
 const AboutMePage = ({ skills }: { skills: Inputs[] }) => {
@@ -26,25 +29,31 @@ const AboutMePage = ({ skills }: { skills: Inputs[] }) => {
         exit={{ scaleX: 0 }}
         transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
       ></motion.div>
-      <div className="flex justify-center items-center h-screen text-[#f2ecff]">
+      <div className="bg-img flex items-center h-screen text-[#f2ecff]">
         <div className="px-96">
-          <Image
+          {/* <Image
             className="mx-auto border border-red-500 p-3 rounded-full"
             src={fuadLogo}
             alt="fuadLogo"
             width={70}
             height={70}
-          ></Image>
+          ></Image> */}
+          <h5 className="border border-[#ee2fee] w-44 py-2 px-4 text-center rounded-full mx-auto">
+            <p className="flex items-center justify-center gap-3">
+              <span className="bg-green-500 p-[5px] rounded-full"></span>I am
+              available
+            </p>
+          </h5>
           {/* <p className="text-center">Hello I am,</p> */}
-          <h3 className="text-8xl font-bold tracking-[5px] text-center mt-8">
+          <h3 className="text-8xl font-bold text-center mt-8 uppercase">
             Fuad Talukder
           </h3>
-          <h3 className="text-2xl font-bold tracking-[5px] text-center mt-2">
+          <h3 className="text-3xl font-bold tracking-[4px] text-center mt-2 uppercase">
             Jr. Frontend Developer
           </h3>
 
           <TypeAnimation
-            className="mt-8 px-48 text-[#EAE727] text-center"
+            className="mt-8 w-[775px] px-[170px] text-[#ee2fee]"
             sequence={[
               // Same substring at the start will only be typed out once, initially
               "Specialized in javascript, Typescript...",
@@ -59,23 +68,14 @@ const AboutMePage = ({ skills }: { skills: Inputs[] }) => {
             repeat={Infinity}
           />
 
-          {/* <p className="mt-4 text-[#EAE727] text-center text-2xl">
-            Specialized in javascript, Typescript.
-          </p> */}
-          {/* <p className="mt-4 text-[#EAE727] text-center text-2xl">
-            Specialized in React js, Next js.
-          </p>
-          <p className="mt-4 text-[#EAE727] text-center text-2xl">
-            Specialized in Node js, Mongodb
-          </p> */}
-          <p className="mt-8 px-28 text-center text-[#f2ecff]">
+          {/* <p className="mt-8 px-28 text-center text-[#f2ecff]">
             Passionate about creating visually appealing, user-friendly
             websites. Seeking opportunities to drive innovation, exceed client
             expectations, and advance my career in web development.
-          </p>
+          </p> */}
           <div className="flex gap-7 mt-10 justify-center">
             <Link href="projects">
-              <button className="text-white flex items-center gap-3 border-b border-red-500 hover:border-white hover:text-red-500 transition-all px-6 py-2 rounded-lg">
+              <button className="text-white flex items-center gap-3 border-b border-[#ee2fee] hover:border-white hover:text-red-500 transition-all px-6 py-2 rounded-lg">
                 View Projects
               </button>
             </Link>
@@ -83,13 +83,68 @@ const AboutMePage = ({ skills }: { skills: Inputs[] }) => {
               href="/Fuad-Talukder-Front-end-developer.pdf"
               download="Fuad-Talukder-Front-end-developer.pdf"
             >
-              <button className="text-white flex items-center gap-3 border-b border-red-500 hover:border-white hover:text-red-500 transition-all px-6 py-2 rounded-lg">
+              <button className="text-white flex items-center gap-3 border-b border-[#ee2fee] hover:border-white hover:text-red-500 transition-all px-6 py-2 rounded-lg">
                 Resume <FaDownload />
               </button>
             </a>
           </div>
         </div>
       </div>
+      {/* about me  */}
+      <div className="about-me px-48 pb-28">
+        <div className="text-white">
+          <p>~ Nice to meet you!</p>
+          <h5 className="text-3xl">Everything about me</h5>
+          <div className="flex mt-24">
+            <div className="w-[40%]">
+              <Image
+                src={aboutMeImg01}
+                alt="aboutMeImg01"
+                width={200}
+                height={200}
+              ></Image>
+              <Image
+                className="-mt-24 ml-36"
+                src={aboutMeImg02}
+                alt="aboutMeImg01"
+                width={200}
+                height={200}
+              ></Image>
+              <Image
+                className="-mt-10 mx-auto mr-32"
+                src={aboutMeImg03}
+                alt="aboutMeImg01"
+                width={200}
+                height={200}
+              ></Image>
+            </div>
+            <div className="w-[60%]">
+              <p className="text-xl">- About me</p>
+              <div>
+                <p className="mt-10 text-[#cacaca]">
+                  <span className="text-white">Hello, This is Fuad,</span>{" "}
+                  Complete Diploma in Computer. I am specialized in web design,
+                  Frontend technology and dynamic sector, It,s my passion. I am
+                  good at MERN Stack, Javascript, Typescript, Next js,
+                  Bootstrap, Tailwind css, Daisyui, Firebase, React Hook Form,
+                  Zod Validation, Framer Motion, React Components.
+                </p>
+                <p className="text-[#cacaca] mt-5">
+                  Design a website can be a delicate and complex process. I will
+                  ensure that the correct components are integrated, the website
+                  is aesthetically pleasing, and it has the proper elements to
+                  generate conversions. Design Modern, Eye-Catching Responsive
+                  website is my working Goal. My objective is to provide best
+                  quality full projects to my clients and establish a good
+                  relationship. I,m fully dedicated to my Profession and
+                  Reputetion. Hardworking and Honesty is my policy.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
       {/* <div className="md:flex gap-20 p-10">
         <div className="md:w-[50%]">
           <h1 className="text-white text-3xl border-b-4 border-red-500 md:w-[330px]">

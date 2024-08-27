@@ -25,11 +25,11 @@ const SideBar = ({ children }: TChildren) => {
           type="checkbox"
           className="drawer-toggle hidden"
         />
-        <div className="bg-img drawer-content flex flex-col bg-[#171719]">
+        <div className="drawer-content flex flex-col">
           {children}
           <label
             htmlFor="my-drawer-2"
-            className="text-white rounded-lg p-3 bg-red-500 text-2xl lg:hidden w-[50px] absolute top-5 right-8"
+            className="text-white rounded-lg p-3 bg-[#ee2fee] text-2xl lg:hidden w-[50px] absolute top-5 right-8"
           >
             <CiMenuFries />
           </label>
@@ -45,20 +45,20 @@ const SideBar = ({ children }: TChildren) => {
             <div className="mt-10">
               <div className="flex gap-3 items-center">
                 {" "}
-                <button className="border border-red-500 p-1 rounded-full">
+                <button className="border border-[#ee2fee] p-1 rounded-full">
                   <IoCall />
                 </button>
                 <span>01756-867585</span>
               </div>
               <div className="flex gap-3 items-center mt-2">
-                <button className="border border-red-500 p-1 rounded-full">
+                <button className="border border-[#ee2fee] p-1 rounded-full">
                   <FaEnvelope />
                 </button>
                 <span>webfuadtk@gmail.com</span>
               </div>
 
               <div className="flex gap-3 items-center mt-2">
-                <button className="border border-red-500 p-1 rounded-full">
+                <button className="border border-[#ee2fee] p-1 rounded-full">
                   <FaLocationDot />
                 </button>
                 <span>Narayanganj, Bangladesh.</span>
@@ -68,23 +68,23 @@ const SideBar = ({ children }: TChildren) => {
               <h1>Connect With Me</h1>
               <div className="mt-5">
                 <Link href="https://github.com/FuadTalukder85">
-                  <button className="border border-red-500 p-1 rounded-full mr-3">
+                  <button className="border border-[#ee2fee] p-1 rounded-full mr-3">
                     <FaGithubSquare />
                   </button>
                 </Link>
                 <Link href="https://www.linkedin.com/in/fuadtalukder">
-                  <button className="border border-red-500 p-1 rounded-full mr-3">
+                  <button className="border border-[#ee2fee] p-1 rounded-full mr-3">
                     <FaLinkedin />
                   </button>
                 </Link>
                 <Link href="https://www.instagram.com/fuad_talukder">
-                  <button className="border border-red-500 p-1 rounded-full mr-3">
+                  <button className="border border-[#ee2fee] p-1 rounded-full mr-3">
                     <FaInstagramSquare />
                   </button>
                 </Link>
 
                 <Link href="https://www.facebook.com/fuad.hasan.tk">
-                  <button className="border border-red-500 p-1 rounded-full mr-3">
+                  <button className="border border-[#ee2fee] p-1 rounded-full mr-3">
                     <FaFacebook />
                   </button>
                 </Link>

@@ -36,7 +36,7 @@ const ProjectsCard = ({ allProjects }: { allProjects: Inputs[] }) => {
           </a>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:px-28 mt-16">
-          {allProjects.map((allProject, index) => (
+          {allProjects?.map((allProject, index) => (
             <div key={index} className="bg-[#161212]">
               <Image
                 src={allProject?.img}

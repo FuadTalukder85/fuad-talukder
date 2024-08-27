@@ -10,9 +10,7 @@ const LeftSideBar = () => {
         <Image src={logo} alt="logo" width={150} className="rounded-2xl" />
       </div>
       <h1 className="mt-5 text-3xl flex justify-center">Fuad Talukder</h1>
-      <p className="flex justify-center text-[#cacaca]">
-        Jr. Frontend Developer
-      </p>
+      <p className="flex justify-center text-white">Jr. Frontend Developer</p>
       <li className="mt-10">
         <Link href="/" className="focus:text-[#cacaca] focus:bg-[#1C2023]">
           About me
@@ -48,7 +46,12 @@ const LeftSideBar = () => {
         </Link>
       </li> */}
 
-      <div className="divider divider-error mt-10">~</div>
+      {/* <div className="divider divider-error mt-10">~</div> */}
+      <div className="flex justify-center items-center gap-4 mt-10">
+        <div className="bg-[#ee2fee] h-[1px] w-[47%]"></div>
+        <div className="w-[4%]">~</div>
+        <div className="bg-[#ee2fee] h-[1px] w-[47%]"></div>
+      </div>
     </div>
   );
 };
