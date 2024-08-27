@@ -14,6 +14,7 @@ import "../about-me/aboutMe.css";
 import Image from "next/image";
 import Service from "@/component/service/Service";
 import Skill from "@/component/skill/Skill";
+import Projects from "@/component/projects/Projects";
 const AboutMePage = ({ skills }: { skills: Inputs[] }) => {
   return (
     <AnimatePresence mode="wait">
@@ -77,7 +78,7 @@ const AboutMePage = ({ skills }: { skills: Inputs[] }) => {
           </p> */}
           <div className="flex gap-7 mt-10 justify-center">
             <Link href="projects">
-              <button className="text-white flex items-center gap-3 border-b border-[#ee2fee] hover:border-white hover:text-red-500 transition-all px-6 py-2 rounded-lg">
+              <button className="text-white flex items-center border-b border-[#ee2fee] hover:border-white hover:text-red-500 transition-all px-6 py-2 rounded-lg">
                 View Projects
               </button>
             </Link>
@@ -93,7 +94,7 @@ const AboutMePage = ({ skills }: { skills: Inputs[] }) => {
         </div>
       </div>
       {/* about me  */}
-      <div className="bg-color px-48">
+      <div className="bg-color px-32">
         <div className="text-white">
           <p>~ Nice to meet you!</p>
           <h5 className="text-4xl">Everything about me</h5>
@@ -147,12 +148,16 @@ const AboutMePage = ({ skills }: { skills: Inputs[] }) => {
         </div>
       </div>
       {/* what i do */}
-      <div className="bg-color px-48 pt-28">
+      <div className="bg-color px-32 pt-28">
         <Service></Service>
       </div>
       {/* skills  */}
-      <div className="bg-color px-48 pb-28 pt-28">
+      <div className="bg-color px-32 pb-10 pt-28">
         <Skill skill={skills}></Skill>
+      </div>
+      {/* projects  */}
+      <div className="bg-img px-32 pb-28 pt-28">
+        <Projects></Projects>
       </div>
 
       {/* <div className="md:flex gap-20 p-10">
