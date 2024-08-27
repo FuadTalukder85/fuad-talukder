@@ -13,6 +13,7 @@ import aboutMeImg03 from "../../assets/aboutMeImg/aboutMeImg03.png";
 import "../about-me/aboutMe.css";
 import Image from "next/image";
 import Service from "@/component/service/Service";
+import Skill from "@/component/skill/Skill";
 const AboutMePage = ({ skills }: { skills: Inputs[] }) => {
   return (
     <AnimatePresence mode="wait">
@@ -146,8 +147,12 @@ const AboutMePage = ({ skills }: { skills: Inputs[] }) => {
         </div>
       </div>
       {/* what i do */}
-      <div className="bg-color px-48 pb-28 pt-28">
+      <div className="bg-color px-48 pt-28">
         <Service></Service>
+      </div>
+      {/* skills  */}
+      <div className="bg-color px-48 pb-28 pt-28">
+        <Skill skill={skills}></Skill>
       </div>
 
       {/* <div className="md:flex gap-20 p-10">
