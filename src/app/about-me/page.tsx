@@ -12,6 +12,7 @@ import aboutMeImg02 from "../../assets/aboutMeImg/aboutMeImg02.png";
 import aboutMeImg03 from "../../assets/aboutMeImg/aboutMeImg03.png";
 import "../about-me/aboutMe.css";
 import Image from "next/image";
+import Service from "@/component/service/Service";
 const AboutMePage = ({ skills }: { skills: Inputs[] }) => {
   return (
     <AnimatePresence mode="wait">
@@ -91,10 +92,10 @@ const AboutMePage = ({ skills }: { skills: Inputs[] }) => {
         </div>
       </div>
       {/* about me  */}
-      <div className="about-me px-48 pb-28">
+      <div className="bg-color px-48">
         <div className="text-white">
           <p>~ Nice to meet you!</p>
-          <h5 className="text-3xl">Everything about me</h5>
+          <h5 className="text-4xl">Everything about me</h5>
           <div className="flex mt-24">
             <div className="w-[40%]">
               <Image
@@ -121,15 +122,15 @@ const AboutMePage = ({ skills }: { skills: Inputs[] }) => {
             <div className="w-[60%]">
               <p className="text-xl">- About me</p>
               <div>
-                <p className="mt-10 text-[#cacaca]">
-                  <span className="text-white">Hello, This is Fuad,</span>{" "}
+                <p className="mt-10">
+                  <span className="text-[#ee2fee]">Hello, This is Fuad,</span>{" "}
                   Complete Diploma in Computer. I am specialized in web design,
                   Frontend technology and dynamic sector, It,s my passion. I am
                   good at MERN Stack, Javascript, Typescript, Next js,
                   Bootstrap, Tailwind css, Daisyui, Firebase, React Hook Form,
                   Zod Validation, Framer Motion, React Components.
                 </p>
-                <p className="text-[#cacaca] mt-5">
+                <p className="mt-5">
                   Design a website can be a delicate and complex process. I will
                   ensure that the correct components are integrated, the website
                   is aesthetically pleasing, and it has the proper elements to
@@ -143,6 +144,10 @@ const AboutMePage = ({ skills }: { skills: Inputs[] }) => {
             </div>
           </div>
         </div>
+      </div>
+      {/* what i do */}
+      <div className="bg-color px-48 pb-28 pt-28">
+        <Service></Service>
       </div>
 
       {/* <div className="md:flex gap-20 p-10">

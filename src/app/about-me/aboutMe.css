@@ -2,7 +2,7 @@
   background: url(../../assets/bg.jpg) no-repeat;
   background-size: cover;
 }
-.about-me {
+.bg-color {
   background-image: linear-gradient(to top, #130122, #1a022e, #130122);
 }
 .side-in {
