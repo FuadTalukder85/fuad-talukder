@@ -4,7 +4,7 @@ import { MdArrowOutward } from "react-icons/md";
 
 const Projects = () => {
   return (
-    <div className="text-white">
+    <div id="projects" className="text-white">
       <div>
         <p>~ My Work</p>
         <h5 className="text-4xl">RECENT PROJECT</h5>

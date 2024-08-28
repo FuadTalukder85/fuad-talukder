@@ -1,9 +1,14 @@
+"use client";
+import { Link } from "react-scroll";
 import Image from "next/image";
-import Link from "next/link";
+// import Link from "next/link";
 import logo from "../../assets/logo/fuad.jpeg";
 import "./LeftSideBar.css";
+import { useState } from "react";
+const pages = ["Home", "About-me", "Projects", "Blog", "Contact", "Check"];
 
 const LeftSideBar = () => {
+  const [navbar, setNavbar] = useState(false);
   return (
     <div className="top-sidebar">
       <div className="flex justify-center">
@@ -11,40 +16,92 @@ const LeftSideBar = () => {
       </div>
       <h1 className="mt-5 text-3xl flex justify-center">Fuad Talukder</h1>
       <p className="flex justify-center text-white">Jr. Frontend Developer</p>
-      <li className="mt-10">
-        <Link href="/" className="focus:text-[#cacaca] focus:bg-[#1C2023]">
-          About me
-        </Link>
-      </li>
-      <li>
-        <Link
-          href="/projects"
-          className="focus:text-[#cacaca] focus:bg-[#1C2023]"
-        >
-          Projects
-        </Link>
-      </li>
-      <li>
-        <Link href="/blog" className="focus:text-[#cacaca] focus:bg-[#1C2023]">
-          Blog
-        </Link>
-      </li>
-      <li>
-        <Link
-          href="/contact"
-          className="focus:text-[#cacaca] focus:bg-[#1C2023]"
-        >
-          Contact
-        </Link>
-      </li>
-      {/* <li>
-        <Link
-          href="/dashboard"
-          className="focus:text-[#cacaca] focus:bg-[#1C2023]"
-        >
-          Dashboard
-        </Link>
-      </li> */}
+      <div className="mt-10">
+        <li>
+          <Link
+            to="home"
+            smooth={true}
+            offset={-80}
+            duration={1000}
+            onClick={() => setNavbar(!navbar)}
+            className="focus:text-[#cacaca] focus:bg-[#1C2023]"
+          >
+            Home
+          </Link>
+        </li>
+        <li>
+          <Link
+            to="aboutMe"
+            smooth={true}
+            offset={-80}
+            duration={1000}
+            onClick={() => setNavbar(!navbar)}
+            className="focus:text-[#cacaca] focus:bg-[#1C2023]"
+          >
+            About me
+          </Link>
+        </li>
+        <li>
+          <Link
+            to="specialties"
+            smooth={true}
+            offset={-80}
+            duration={1000}
+            onClick={() => setNavbar(!navbar)}
+            className="focus:text-[#cacaca] focus:bg-[#1C2023]"
+          >
+            Specialties
+          </Link>
+        </li>
+        <li>
+          <Link
+            to="skills"
+            smooth={true}
+            offset={-80}
+            duration={1000}
+            onClick={() => setNavbar(!navbar)}
+            className="focus:text-[#cacaca] focus:bg-[#1C2023]"
+          >
+            Skills
+          </Link>
+        </li>
+        <li>
+          <Link
+            to="projects"
+            smooth={true}
+            offset={-80}
+            duration={1000}
+            onClick={() => setNavbar(!navbar)}
+            className="focus:text-[#cacaca] focus:bg-[#1C2023]"
+          >
+            Projects
+          </Link>
+        </li>
+        <li>
+          <Link
+            to="blog"
+            smooth={true}
+            offset={-80}
+            duration={1000}
+            onClick={() => setNavbar(!navbar)}
+            className="focus:text-[#cacaca] focus:bg-[#1C2023]"
+          >
+            Blog
+          </Link>
+        </li>
+        <li>
+          <Link
+            to="contact"
+            smooth={true}
+            offset={-80}
+            duration={1000}
+            onClick={() => setNavbar(!navbar)}
+            className="focus:text-[#cacaca] focus:bg-[#1C2023]"
+          >
+            Contact
+          </Link>
+        </li>
+      </div>
 
       {/* <div className="divider divider-error mt-10">~</div> */}
       <div className="flex justify-center items-center gap-4 mt-10">

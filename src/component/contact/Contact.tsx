@@ -12,7 +12,7 @@ export type Inputs = {
   message: string;
   _id: string;
 };
-const ContactPage = () => {
+const Contact = () => {
   const {
     register,
     handleSubmit,
@@ -30,7 +30,7 @@ const ContactPage = () => {
     }
   };
   return (
-    <div className="p-10">
+    <div id="contact" className="p-10">
       <p className="text-white">~ Contact</p>
       <h5 className="text-4xl text-white">Reach out me</h5>
       {/* form */}
@@ -147,4 +147,4 @@ const ContactPage = () => {
   );
 };
 
-export default ContactPage;
+export default Contact;

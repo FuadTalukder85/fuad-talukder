@@ -3,7 +3,7 @@ import React from "react";
 
 const Skill = ({ skill }: { skill: Inputs[] }) => {
   return (
-    <div>
+    <div id="skills">
       <h5 className="text-4xl text-white ">My Skills</h5>
       <div className="grid grid-cols-2 md:grid-cols-5 gap-4 mt-16 text-white">
         {skill?.map((skill, index) => (

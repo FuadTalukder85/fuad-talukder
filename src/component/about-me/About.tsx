@@ -1,22 +1,12 @@
 "use client";
-// import Service from "@/component/service/Service";
-// import Skill from "@/component/skill/Skill";
-import Link from "next/link";
-import { FaDownload } from "react-icons/fa6";
 import { motion, AnimatePresence } from "framer-motion";
-import { Inputs } from "../(dashboardLayout)/dashboard/addSkill/page";
-import { TypeAnimation } from "react-type-animation";
-// import fuadLogo from "../../assets/logo/fuad-talukder.png";
 import aboutMeImg01 from "../../assets/aboutMeImg/aboutMeImg01.png";
 import aboutMeImg02 from "../../assets/aboutMeImg/aboutMeImg02.png";
 import aboutMeImg03 from "../../assets/aboutMeImg/aboutMeImg03.png";
 import "../about-me/aboutMe.css";
 import Image from "next/image";
-import Service from "@/component/service/Service";
-import Skill from "@/component/skill/Skill";
-import Projects from "@/component/projects/Projects";
-import ContactPage from "../contact/page";
-const AboutMePage = ({ skills }: { skills: Inputs[] }) => {
+
+const About = () => {
   return (
     <AnimatePresence mode="wait">
       <motion.div
@@ -33,69 +23,9 @@ const AboutMePage = ({ skills }: { skills: Inputs[] }) => {
         exit={{ scaleX: 0 }}
         transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
       ></motion.div>
-      <div className="bg-img flex items-center h-screen text-[#f2ecff]">
-        <div className="px-96">
-          {/* <Image
-            className="mx-auto border border-red-500 p-3 rounded-full"
-            src={fuadLogo}
-            alt="fuadLogo"
-            width={70}
-            height={70}
-          ></Image> */}
-          <h5 className="border border-[#ee2fee] w-44 py-2 px-4 text-center rounded-full mx-auto">
-            <p className="flex items-center justify-center gap-3">
-              <span className="bg-green-500 p-[5px] rounded-full"></span>I am
-              available
-            </p>
-          </h5>
-          {/* <p className="text-center">Hello I am,</p> */}
-          <h3 className="text-8xl font-bold text-center mt-8 uppercase">
-            Fuad Talukder
-          </h3>
-          <h3 className="text-3xl font-bold tracking-[4px] text-center mt-2 uppercase">
-            Jr. Frontend Developer
-          </h3>
 
-          <TypeAnimation
-            className="mt-8 w-[775px] px-[170px] text-[#ee2fee]"
-            sequence={[
-              // Same substring at the start will only be typed out once, initially
-              "Specialized in javascript, Typescript...",
-              1000, // wait 1s before replacing "Mice" with "Hamsters"
-              "Specialized in React js, Next js...",
-              "Specialized in Node js, Mongodb...",
-              1000,
-            ]}
-            wrapper="span"
-            speed={50}
-            style={{ fontSize: "1.5em", display: "inline-block" }}
-            repeat={Infinity}
-          />
-
-          {/* <p className="mt-8 px-28 text-center text-[#f2ecff]">
-            Passionate about creating visually appealing, user-friendly
-            websites. Seeking opportunities to drive innovation, exceed client
-            expectations, and advance my career in web development.
-          </p> */}
-          <div className="flex gap-7 mt-10 justify-center">
-            <Link href="projects">
-              <button className="text-white flex items-center border-b border-[#ee2fee] hover:border-white hover:text-red-500 transition-all px-6 py-2 rounded-lg">
-                View Projects
-              </button>
-            </Link>
-            <a
-              href="/Fuad-Talukder-Front-end-developer.pdf"
-              download="Fuad-Talukder-Front-end-developer.pdf"
-            >
-              <button className="text-white flex items-center gap-3 border-b border-[#ee2fee] hover:border-white hover:text-red-500 transition-all px-6 py-2 rounded-lg">
-                Resume <FaDownload />
-              </button>
-            </a>
-          </div>
-        </div>
-      </div>
       {/* about me  */}
-      <div className="bg-color px-32">
+      <div id="aboutMe" className="bg-color px-32">
         <div className="text-white">
           <p>~ Nice to meet you!</p>
           <h5 className="text-4xl">Everything about me</h5>
@@ -147,22 +77,6 @@ const AboutMePage = ({ skills }: { skills: Inputs[] }) => {
             </div>
           </div>
         </div>
-      </div>
-      {/* what i do */}
-      <div className="bg-color px-32 pt-28">
-        <Service></Service>
-      </div>
-      {/* skills  */}
-      <div className="bg-color px-32 pb-10 pt-28">
-        <Skill skill={skills}></Skill>
-      </div>
-      {/* projects  */}
-      <div className="bg-img px-32 pb-10 pt-28">
-        <Projects></Projects>
-      </div>
-      {/* contact */}
-      <div className="bg-img px-32 pb-28 pt-28">
-        <ContactPage></ContactPage>
       </div>
 
       {/* <div className="md:flex gap-20 p-10">
@@ -252,4 +166,4 @@ const AboutMePage = ({ skills }: { skills: Inputs[] }) => {
   );
 };
 
-export default AboutMePage;
+export default About;

@@ -3,7 +3,7 @@ import webDesign from "../../assets/serviceImg/webDesign.jpg";
 
 const Service = () => {
   return (
-    <div>
+    <div id="specialties">
       <p className="text-white mt-10">~ My Service</p>
       <h5 className="text-4xl text-white ">My Specialties</h5>
       {/* accordion */}
