@@ -1,14 +1,10 @@
 "use client";
 import { Link } from "react-scroll";
 import Image from "next/image";
-// import Link from "next/link";
 import logo from "../../assets/logo/fuad.jpeg";
 import "./LeftSideBar.css";
-import { useState } from "react";
-const pages = ["Home", "About-me", "Projects", "Blog", "Contact", "Check"];
 
 const LeftSideBar = () => {
-  const [navbar, setNavbar] = useState(false);
   return (
     <div className="top-sidebar">
       <div className="flex justify-center">
@@ -23,7 +19,6 @@ const LeftSideBar = () => {
             smooth={true}
             offset={-80}
             duration={1000}
-            onClick={() => setNavbar(!navbar)}
             className="focus:text-[#cacaca] focus:bg-[#1C2023]"
           >
             Home
@@ -35,7 +30,6 @@ const LeftSideBar = () => {
             smooth={true}
             offset={-80}
             duration={1000}
-            onClick={() => setNavbar(!navbar)}
             className="focus:text-[#cacaca] focus:bg-[#1C2023]"
           >
             About me
@@ -47,7 +41,6 @@ const LeftSideBar = () => {
             smooth={true}
             offset={-80}
             duration={1000}
-            onClick={() => setNavbar(!navbar)}
             className="focus:text-[#cacaca] focus:bg-[#1C2023]"
           >
             Specialties
@@ -59,7 +52,6 @@ const LeftSideBar = () => {
             smooth={true}
             offset={-80}
             duration={1000}
-            onClick={() => setNavbar(!navbar)}
             className="focus:text-[#cacaca] focus:bg-[#1C2023]"
           >
             Skills
@@ -71,7 +63,6 @@ const LeftSideBar = () => {
             smooth={true}
             offset={-80}
             duration={1000}
-            onClick={() => setNavbar(!navbar)}
             className="focus:text-[#cacaca] focus:bg-[#1C2023]"
           >
             Projects
@@ -83,7 +74,6 @@ const LeftSideBar = () => {
             smooth={true}
             offset={-80}
             duration={1000}
-            onClick={() => setNavbar(!navbar)}
             className="focus:text-[#cacaca] focus:bg-[#1C2023]"
           >
             Blog
@@ -95,7 +85,6 @@ const LeftSideBar = () => {
             smooth={true}
             offset={-80}
             duration={1000}
-            onClick={() => setNavbar(!navbar)}
             className="focus:text-[#cacaca] focus:bg-[#1C2023]"
           >
             Contact

@@ -40,7 +40,7 @@ const SideBar = ({ children }: TChildren) => {
             aria-label="close sidebar"
             className="drawer-overlay"
           ></label>
-          <ul className="sidebar menu p-4 w-80 min-h-full">
+          <ul className="sidebar menu border-r-2 border-black p-4 w-80 min-h-full">
             <LeftSideBar></LeftSideBar>
             <div className="mt-10">
               <div className="flex gap-3 items-center">
@@ -66,7 +66,7 @@ const SideBar = ({ children }: TChildren) => {
             </div>
             <div className="mt-10">
               <h1>Connect With Me</h1>
-              <div className="mt-5">
+              <div className="mt-3">
                 <Link href="https://github.com/FuadTalukder85">
                   <button className="border border-[#ee2fee] p-1 rounded-full mr-3">
                     <FaGithubSquare />
@@ -89,6 +89,11 @@ const SideBar = ({ children }: TChildren) => {
                   </button>
                 </Link>
               </div>
+            </div>
+            <div className="mt-7">
+              <p className="text-xs text-center px-10 absolute bottom-0 pb-5">
+                Copyright © 2023 - All right reserved by Fuad Talukder
+              </p>
             </div>
           </ul>
         </div>

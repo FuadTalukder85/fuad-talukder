@@ -1,4 +1,4 @@
-import Link from "next/link";
+import { Link } from "react-scroll";
 import React from "react";
 import { FaDownload } from "react-icons/fa6";
 import { TypeAnimation } from "react-type-animation";
@@ -7,7 +7,7 @@ const Home = () => {
   return (
     <div id="home">
       <div className="bg-img flex items-center h-screen text-[#f2ecff]">
-        <div className="px-96">
+        <div className="mx-auto">
           <h5 className="border border-[#ee2fee] w-44 py-2 px-4 text-center rounded-full mx-auto">
             <p className="flex items-center justify-center gap-3">
               <span className="bg-green-500 p-[5px] rounded-full"></span>I am
@@ -37,7 +37,7 @@ const Home = () => {
             repeat={Infinity}
           />
           <div className="flex gap-7 mt-10 justify-center">
-            <Link href="projects">
+            <Link to="projects" smooth={true} offset={-80} duration={1000}>
               <button className="text-white flex items-center border-b border-[#ee2fee] hover:border-white hover:text-red-500 transition-all px-6 py-2 rounded-lg">
                 View Projects
               </button>
