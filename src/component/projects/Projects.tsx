@@ -20,11 +20,11 @@ const Projects = () => {
             <p className="mt-2">Mern stack</p>
             <p className="mt-5">Source code : Github</p>
             <div className="flex gap-5">
-              <button className="text-white flex items-center gap-3 border-b border-[#ee2fee] hover:border-white hover:text-red-500 transition-all px-3 py-2 rounded-lg">
+              <button className="text-white flex items-center gap-3 border-b border-[#ee2fee] hover:text-[#ee2fee] transition-all duration-700 px-3 py-2 rounded-lg">
                 Frontend code
                 <MdArrowOutward />
               </button>
-              <button className="text-white flex items-center gap-3 border-b border-[#ee2fee] hover:border-white hover:text-red-500 transition-all px-3 py-2 rounded-lg">
+              <button className="text-white flex items-center gap-3 border-b border-[#ee2fee] hover:text-[#ee2fee] transition-all duration-700 px-3 py-2 rounded-lg">
                 Backend code
                 <MdArrowOutward />
               </button>
@@ -45,11 +45,11 @@ const Projects = () => {
             <p className="mt-2">Mern stack</p>
             <p className="mt-5">Source code : Github</p>
             <div className="flex gap-5">
-              <button className="text-white flex items-center gap-3 border-b border-[#ee2fee] hover:border-white hover:text-red-500 transition-all px-3 py-2 rounded-lg">
+              <button className="text-white flex items-center gap-3 border-b border-[#ee2fee] hover:text-[#ee2fee] transition-all duration-700 px-3 py-2 rounded-lg">
                 Frontend code
                 <MdArrowOutward />
               </button>
-              <button className="text-white flex items-center gap-3 border-b border-[#ee2fee] hover:border-white hover:text-red-500 transition-all px-3 py-2 rounded-lg">
+              <button className="text-white flex items-center gap-3 border-b border-[#ee2fee] hover:text-[#ee2fee] transition-all duration-700 px-3 py-2 rounded-lg">
                 Backend code
                 <MdArrowOutward />
               </button>
@@ -70,11 +70,11 @@ const Projects = () => {
             <p className="mt-2">Mern stack</p>
             <p className="mt-5">Source code : Github</p>
             <div className="flex gap-5">
-              <button className="text-white flex items-center gap-3 border-b border-[#ee2fee] hover:border-white hover:text-red-500 transition-all px-3 py-2 rounded-lg">
+              <button className="text-white flex items-center gap-3 border-b border-[#ee2fee] hover:text-[#ee2fee] transition-all duration-700 px-3 py-2 rounded-lg">
                 Frontend code
                 <MdArrowOutward />
               </button>
-              <button className="text-white flex items-center gap-3 border-b border-[#ee2fee] hover:border-white hover:text-red-500 transition-all px-3 py-2 rounded-lg">
+              <button className="text-white flex items-center gap-3 border-b border-[#ee2fee] hover:text-[#ee2fee] transition-all duration-700 px-3 py-2 rounded-lg">
                 Backend code
                 <MdArrowOutward />
               </button>
@@ -95,11 +95,11 @@ const Projects = () => {
             <p className="mt-2">Mern stack</p>
             <p className="mt-5">Source code : Github</p>
             <div className="flex gap-5">
-              <button className="text-white flex items-center gap-3 border-b border-[#ee2fee] hover:border-white hover:text-red-500 transition-all px-3 py-2 rounded-lg">
+              <button className="text-white flex items-center gap-3 border-b border-[#ee2fee] hover:text-[#ee2fee] transition-all duration-700 px-3 py-2 rounded-lg">
                 Frontend code
                 <MdArrowOutward />
               </button>
-              <button className="text-white flex items-center gap-3 border-b border-[#ee2fee] hover:border-white hover:text-red-500 transition-all px-3 py-2 rounded-lg">
+              <button className="text-white flex items-center gap-3 border-b border-[#ee2fee] hover:text-[#ee2fee] transition-all duration-700 px-3 py-2 rounded-lg">
                 Backend code
                 <MdArrowOutward />
               </button>

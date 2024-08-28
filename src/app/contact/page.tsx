@@ -31,9 +31,8 @@ const ContactPage = () => {
   };
   return (
     <div className="p-10">
-      <h1 className="text-white text-3xl mt-10 border-b-4 border-red-500 w-[330px]">
-        How Can I Help You?
-      </h1>
+      <p className="text-white">~ Contact</p>
+      <h5 className="text-4xl text-white">Reach out me</h5>
       {/* form */}
 
       <div className="hero mt-5">
@@ -50,10 +49,10 @@ const ContactPage = () => {
                       {...register("name", { required: "Name is required" })}
                       type="text"
                       placeholder="Full Name"
-                      className="px-3 py-2 bg-[#161212] text-white"
+                      className="px-4 py-3 bg-[#2b033077] text-white placeholder-white border border-[#ffe0ff]"
                     />
                     {errors.name && (
-                      <span className="text-red-500 mt-2">
+                      <span className="text-[#ee2fee] mt-2">
                         {errors.name.message}
                       </span>
                     )}
@@ -66,10 +65,10 @@ const ContactPage = () => {
                       {...register("email", { required: "Email is required" })}
                       type="text"
                       placeholder="Email Address"
-                      className="px-3 py-2 bg-[#161212] text-white"
+                      className="px-4 py-3 bg-[#2b033077] text-white placeholder-white border border-[#ffe0ff]"
                     />
                     {errors.email && (
-                      <span className="text-red-500 mt-2">
+                      <span className="text-[#ee2fee] mt-2">
                         {errors.email.message}
                       </span>
                     )}
@@ -84,10 +83,10 @@ const ContactPage = () => {
                       })}
                       type="text"
                       placeholder="Subject"
-                      className="px-3 py-2 bg-[#161212] text-white"
+                      className="px-4 py-3 bg-[#2b033077] text-white placeholder-white border border-[#ffe0ff]"
                     />
                     {errors.subject && (
-                      <span className="text-red-500 mt-2">
+                      <span className="text-[#ee2fee] mt-2">
                         {errors.subject.message}
                       </span>
                     )}
@@ -98,13 +97,13 @@ const ContactPage = () => {
                     <label htmlFor="description" className="label"></label>
                     <textarea
                       {...register("message", {
-                        required: "Subject is required",
+                        required: "Message is required",
                       })}
                       placeholder="Message"
-                      className="px-3 py-2 pb-24 bg-[#161212] text-white"
+                      className="px-5 py-5 pb-28 bg-[#2b033077] text-white placeholder-white border border-[#ffe0ff]"
                     ></textarea>
                     {errors.message && (
-                      <span className="text-red-500 mt-2">
+                      <span className="text-[#ee2fee] mt-2">
                         {errors.message.message}
                       </span>
                     )}
@@ -115,7 +114,7 @@ const ContactPage = () => {
               <div className="form-control mt-6">
                 <button
                   type="submit"
-                  className="w-[170px] text-white mt-2 flex items-center gap-3 border border-red-500 hover:border-white hover:text-red-500 transition-all px-6 py-2 rounded-lg"
+                  className="w-[170px] text-white mt-2 flex items-center gap-3 border border-[#ee2fee] hover:bg-[#ee2fee] transition-all duration-700 px-6 py-2 rounded-lg"
                 >
                   Send Message
                 </button>
@@ -125,19 +124,19 @@ const ContactPage = () => {
         </div>
       </div>
       <div className="grid grid-cols-2 md:grid-cols-4 gap-2 md:gap-10 mt-16">
-        <div className="bg-[#161212] ps-2 md:ps-10 py-7 rounded-md md:w-[300px] border border-[#161212] hover:border hover:border-red-500 transition-all">
+        <div className="bg-[#2b033077] ps-2 md:ps-10 py-7 rounded-md md:w-[300px] shadow-black shadow-2xl border border-[#161212] hover:border hover:border-[#ee2fee] transition-all duration-700">
           <h5 className="text-[#cacaca]">Email :</h5>
           <p className="text-white mt-3">webfuadtk@gmail.com</p>
         </div>
-        <div className="bg-[#161212] ps-2 md:ps-10 py-7 rounded-md md:w-[300px] border border-[#161212] hover:border hover:border-red-500 transition-all">
+        <div className="bg-[#2b033077] ps-2 md:ps-10 py-7 rounded-md md:w-[300px] shadow-black shadow-2xl border border-[#161212] hover:border hover:border-[#ee2fee] transition-all duration-700">
           <h5 className="text-[#cacaca]">Phone :</h5>
           <p className="text-white mt-3">01756-867585</p>
         </div>
-        <div className="bg-[#161212] ps-2 md:ps-10 py-7 rounded-md md:w-[300px] border border-[#161212] hover:border hover:border-red-500 transition-all">
+        <div className="bg-[#2b033077] ps-2 md:ps-10 py-7 rounded-md md:w-[300px] shadow-black shadow-2xl border border-[#161212] hover:border hover:border-[#ee2fee] transition-all duration-700">
           <h5 className="text-[#cacaca]">Address :</h5>
           <p className="text-white mt-3">Kashipur, Narayanganj</p>
         </div>
-        <div className="bg-[#161212] ps-2 md:ps-10 py-7 rounded-md md:w-[300px] border border-[#161212] hover:border hover:border-red-500 transition-all">
+        <div className="bg-[#2b033077] ps-2 md:ps-10 py-7 rounded-md md:w-[300px] shadow-black shadow-2xl border border-[#161212] hover:border hover:border-[#ee2fee] transition-all duration-700">
           <h5 className="text-[#cacaca]">Follow :</h5>
           <p className="text-white mt-3 flex gap-3">
             <FaGithub /> <CiLinkedin /> <FaSquareInstagram />
