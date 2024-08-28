@@ -1,28 +1,28 @@
 "use client";
-import aboutMeImg from "../../assets/aboutMeImg/aboutMeImg.png";
+import AboutMe from "../../assets/AboutMe02.json";
+import Lottie from "react-lottie";
 import "../about-me/aboutMe.css";
-import Image from "next/image";
 
 const About = () => {
+  const defaultOptions = {
+    loop: true,
+    autoplay: true,
+    animationData: AboutMe,
+  };
   return (
     <div>
       <div id="aboutMe" className="bg-color px-32">
         <div className="text-white">
           <p>~ Nice to meet you!</p>
           <h5 className="text-4xl">Everything about me</h5>
-          <div className="flex items-center mt-24">
-            <div className="w-[40%]">
-              <Image
-                src={aboutMeImg}
-                alt="aboutMeImg01"
-                width={450}
-                height={450}
-              ></Image>
+          <div className="flex gap-10 items-center mt-24">
+            <div className="w-[35%]">
+              <Lottie options={defaultOptions} />
             </div>
-            <div className="w-[60%]">
+            <div className="w-[65%]">
               <p className="text-xl">- About me</p>
               <div>
-                <p className="mt-10">
+                <p className="mt-5">
                   <span className="text-[#ee2fee]">Hello, This is Fuad,</span>{" "}
                   Complete Diploma in Computer. I am specialized in web design,
                   Frontend technology and dynamic sector, It,s my passion. I am
