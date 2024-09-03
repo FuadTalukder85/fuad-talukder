@@ -68,7 +68,7 @@ const LeftSideBar = () => {
             Projects
           </Link>
         </li>
-        <li>
+        {/* <li>
           <Link
             to="blog"
             smooth={true}
@@ -78,7 +78,7 @@ const LeftSideBar = () => {
           >
             Blog
           </Link>
-        </li>
+        </li> */}
         <li>
           <Link
             to="contact"

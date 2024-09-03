@@ -4,8 +4,8 @@ import webDesign from "../../assets/serviceImg/webDesign.jpg";
 const Service = () => {
   return (
     <div id="specialties">
-      <p className="text-white mt-10">~ My Service</p>
-      <h5 className="text-4xl text-white ">My Specialties</h5>
+      <p className="text-white md:mt-10 px-5 md:px-0">~ My Service</p>
+      <h5 className="text-4xl text-white px-5 md:px-0">My Specialties</h5>
       {/* accordion */}
       <div className="collapse collapse-plus text-white mt-16">
         <input type="radio" name="my-accordion-3" defaultChecked />
@@ -16,7 +16,7 @@ const Service = () => {
           </div>
         </div>
         <div className="collapse-content">
-          <div className="flex gap-10 items-center">
+          <div className="md:flex gap-10 items-center">
             <Image
               src={webDesign}
               alt="webDesign"
@@ -42,7 +42,7 @@ const Service = () => {
           </div>
         </div>
         <div className="collapse-content">
-          <div className="flex gap-10 items-center">
+          <div className="md:flex gap-10 items-center">
             <Image
               src={webDesign}
               alt="webDesign"
@@ -69,7 +69,7 @@ const Service = () => {
           </div>
         </div>
         <div className="collapse-content">
-          <div className="flex gap-10 items-center">
+          <div className="md:flex gap-10 items-center">
             <Image
               src={webDesign}
               alt="webDesign"

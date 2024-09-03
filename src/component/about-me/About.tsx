@@ -11,15 +11,15 @@ const About = () => {
   };
   return (
     <div>
-      <div id="aboutMe" className="bg-color px-32">
+      <div id="aboutMe" className="bg-color pt-24 md:pt-24 px-5 md:px-32">
         <div className="text-white">
           <p>~ Nice to meet you!</p>
           <h5 className="text-4xl">Everything about me</h5>
-          <div className="flex gap-10 items-center mt-24">
-            <div className="w-[35%]">
+          <div className="md:flex gap-10 items-center mt-6 md:mt-24">
+            <div className="md:w-[35%]">
               <Lottie options={defaultOptions} />
             </div>
-            <div className="w-[65%]">
+            <div className="md:w-[65%]">
               <p className="text-xl">- About me</p>
               <div>
                 <p className="mt-5">

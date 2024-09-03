@@ -1,9 +1,11 @@
 "use client";
-import { FaSquareInstagram } from "react-icons/fa6";
-import { CiLinkedin } from "react-icons/ci";
-import { FaGithub } from "react-icons/fa6";
+import { FaLinkedin } from "react-icons/fa";
+import { FaInstagramSquare } from "react-icons/fa";
+import { FaFacebook } from "react-icons/fa";
+import { FaGithubSquare } from "react-icons/fa";
 import { useForm, SubmitHandler } from "react-hook-form";
 import { addContacts } from "@/utils/addContacts";
+import Link from "next/link";
 
 export type Inputs = {
   name: string;
@@ -30,12 +32,12 @@ const Contact = () => {
     }
   };
   return (
-    <div id="contact" className="p-10">
+    <div id="contact" className="p-5 md:p-10">
       <p className="text-white">~ Contact</p>
       <h5 className="text-4xl text-white">Reach out me</h5>
       {/* form */}
 
-      <div className="hero mt-5">
+      <div className="hero md:mt-5">
         <div className="hero-content w-full">
           <div className="card shrink-0 w-full max-w-5xl">
             <form onSubmit={handleSubmit(onSubmit)}>
@@ -139,7 +141,27 @@ const Contact = () => {
         <div className="bg-[#2b033077] ps-2 md:ps-10 py-7 rounded-md md:w-[300px] shadow-black shadow-2xl border border-[#161212] hover:border hover:border-[#ee2fee] transition-all duration-700">
           <h5 className="text-[#cacaca]">Follow :</h5>
           <p className="text-white mt-3 flex gap-3">
-            <FaGithub /> <CiLinkedin /> <FaSquareInstagram />
+            <Link href="https://github.com/FuadTalukder85">
+              <button className="border border-[#ee2fee] p-1 rounded-full mr-3">
+                <FaGithubSquare />
+              </button>
+            </Link>
+            <Link href="https://www.linkedin.com/in/fuadtalukder">
+              <button className="border border-[#ee2fee] p-1 rounded-full mr-3">
+                <FaLinkedin />
+              </button>
+            </Link>
+            <Link href="https://www.instagram.com/fuad_talukder">
+              <button className="border border-[#ee2fee] p-1 rounded-full mr-3">
+                <FaInstagramSquare />
+              </button>
+            </Link>
+
+            <Link href="https://www.facebook.com/fuad.hasan.tk">
+              <button className="border border-[#ee2fee] p-1 rounded-full mr-3">
+                <FaFacebook />
+              </button>
+            </Link>
           </p>
         </div>
       </div>

@@ -6,7 +6,7 @@ import { TypeAnimation } from "react-type-animation";
 const Home = () => {
   return (
     <div id="home">
-      <div className="bg-img flex items-center h-screen text-[#f2ecff]">
+      <div className="bg-img flex items-center md:h-screen pt-20 md:pt-0 text-[#f2ecff]">
         <div className="mx-auto">
           <h5 className="border border-[#ee2fee] w-44 py-2 px-4 text-center rounded-full mx-auto">
             <p className="flex items-center justify-center gap-3">
@@ -14,15 +14,15 @@ const Home = () => {
               available
             </p>
           </h5>
-          <h3 className="text-8xl font-bold text-center mt-8 uppercase">
+          <h3 className="text-3xl md:text-8xl font-bold text-center mt-8 uppercase">
             Fuad Talukder
           </h3>
-          <h3 className="text-3xl font-bold tracking-[4px] text-center mt-2 uppercase">
+          <h3 className="md:text-3xl font-bold md:tracking-[4px] text-center mt-2 uppercase">
             Jr. Frontend Developer
           </h3>
 
           <TypeAnimation
-            className="mt-8 w-[775px] px-[170px] text-[#ee2fee]"
+            className="mt-8 md:w-[775px] md:px-[170px] text-[#ee2fee] text-xl md:text-2xl"
             sequence={[
               // Same substring at the start will only be typed out once, initially
               "Specialized in javascript, Typescript...",
@@ -33,7 +33,7 @@ const Home = () => {
             ]}
             wrapper="span"
             speed={50}
-            style={{ fontSize: "1.5em", display: "inline-block" }}
+            style={{ display: "inline-block" }}
             repeat={Infinity}
           />
           <div className="flex gap-7 mt-10 justify-center">
