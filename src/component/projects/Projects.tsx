@@ -13,10 +13,23 @@ const Projects = () => {
         {/* project 01 */}
         <div className="md:flex items-center gap-7 mt-8 md:mt-0">
           <div className="md:flex items-center gap-2 md:gap-5 shadow-black shadow-2xl">
-            <div className="block md:hidden">
-              <p className="text-xl">E-commerce</p>
-              <p className="mt-2 pb-10 md:pb-0">Mern stack</p>
+            {/* responsive start */}
+            <div className="flex justify-between items-center md:hidden">
+              <div>
+                <p className="text-xl">E-commerce</p>
+                <p className="mt-2 pb-10 md:pb-0">Mern stack</p>
+              </div>
+              <div className="text-4xl md:mt-5 md:flex justify-end">
+                <Link
+                  href="https://data-solution-360-rosy.vercel.app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <MdArrowOutward />
+                </Link>
+              </div>
             </div>
+            {/* responsive end */}
             <Image
               src="https://i.postimg.cc/9MgjTS2B/vogal.png"
               alt="vogal"
@@ -36,7 +49,7 @@ const Projects = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <button className="text-white flex items-center gap-3 border-b border-[#ee2fee] hover:text-[#ee2fee] transition-all duration-700 px-3 py-2 rounded-lg">
+                <button className="text-white flex items-center gap-3 border-b border-[#ee2fee] hover:text-[#ee2fee] transition-all duration-700 px-1 md:px-3 py-2 rounded-lg">
                   Frontend code
                   <MdArrowOutward />
                 </button>
@@ -46,14 +59,11 @@ const Projects = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <button className="text-white flex items-center gap-3 border-b border-[#ee2fee] hover:text-[#ee2fee] transition-all duration-700 px-3 py-2 rounded-lg">
+                <button className="text-white flex items-center gap-3 border-b border-[#ee2fee] hover:text-[#ee2fee] transition-all duration-700 px-1 md:px-3 py-2 rounded-lg">
                   Backend code
                   <MdArrowOutward />
                 </button>
               </Link>
-              <div className="block md:hidden text-2xl">
-                <MdArrowOutward />
-              </div>
             </div>
             <div className="text-4xl md:mt-5 hidden md:flex justify-end">
               <Link
@@ -70,10 +80,23 @@ const Projects = () => {
         {/* project 02 */}
         <div className="md:flex items-center gap-7 mt-16 md:mt-0">
           <div className="md:flex items-center gap-2 md:gap-5 shadow-black shadow-2xl">
-            <div className="block md:hidden">
-              <p className="text-xl">E-commerce</p>
-              <p className="mt-2 pb-10 md:pb-0">Mern stack</p>
+            {/* responsive start */}
+            <div className="flex justify-between items-center md:hidden">
+              <div>
+                <p className="text-xl">E-commerce</p>
+                <p className="mt-2 pb-10 md:pb-0">Mern stack</p>
+              </div>
+              <div className="text-4xl md:mt-5 md:flex justify-end">
+                <Link
+                  href="https://food-sphere-frontend.vercel.app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <MdArrowOutward />
+                </Link>
+              </div>
             </div>
+            {/* responsive end */}
             <Image
               src="https://i.postimg.cc/DwKRxxsN/Food-Sphere.png"
               alt="vogal"
@@ -93,7 +116,7 @@ const Projects = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <button className="text-white flex items-center gap-3 border-b border-[#ee2fee] hover:text-[#ee2fee] transition-all duration-700 px-3 py-2 rounded-lg">
+                <button className="text-white flex items-center gap-3 border-b border-[#ee2fee] hover:text-[#ee2fee] transition-all duration-700 px-1 md:px-3 py-2 rounded-lg">
                   Frontend code
                   <MdArrowOutward />
                 </button>
@@ -103,20 +126,11 @@ const Projects = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <button className="text-white flex items-center gap-3 border-b border-[#ee2fee] hover:text-[#ee2fee] transition-all duration-700 px-3 py-2 rounded-lg">
+                <button className="text-white flex items-center gap-3 border-b border-[#ee2fee] hover:text-[#ee2fee] transition-all duration-700 px-1 md:px-3 py-2 rounded-lg">
                   Backend code
                   <MdArrowOutward />
                 </button>
               </Link>
-              <div className="block md:hidden text-2xl">
-                <Link
-                  href="https://github.com/FuadTalukder85/foodSphere-backend.git"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <MdArrowOutward />
-                </Link>
-              </div>
             </div>
             <div className="text-4xl md:mt-5 hidden md:flex justify-end">
               <Link
@@ -133,10 +147,23 @@ const Projects = () => {
         {/* project 03 */}
         <div className="md:flex items-center gap-7 mt-16 md:mt-0">
           <div className="md:flex items-center gap-2 md:gap-5 shadow-black shadow-2xl">
-            <div className="block md:hidden">
-              <p className="text-xl">E-commerce</p>
-              <p className="mt-2 pb-10 md:pb-0">Mern stack</p>
+            {/* responsive start */}
+            <div className="flex justify-between items-center md:hidden">
+              <div>
+                <p className="text-xl">E-commerce</p>
+                <p className="mt-2 pb-10 md:pb-0">Mern stack</p>
+              </div>
+              <div className="text-4xl md:mt-5 md:flex justify-end">
+                <Link
+                  href="https://grocer-ease-chi.vercel.app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <MdArrowOutward />
+                </Link>
+              </div>
             </div>
+            {/* responsive end */}
             <Image
               src="https://i.postimg.cc/T3qFFnJ3/Grocer-Ease.png"
               alt="vogal"
@@ -155,7 +182,7 @@ const Projects = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <button className="text-white flex items-center gap-3 border-b border-[#ee2fee] hover:text-[#ee2fee] transition-all duration-700 px-3 py-2 rounded-lg">
+                <button className="text-white flex items-center gap-3 border-b border-[#ee2fee] hover:text-[#ee2fee] transition-all duration-700 px-1 md:px-3 py-2 rounded-lg">
                   Frontend code
                   <MdArrowOutward />
                 </button>
@@ -165,14 +192,11 @@ const Projects = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <button className="text-white flex items-center gap-3 border-b border-[#ee2fee] hover:text-[#ee2fee] transition-all duration-700 px-3 py-2 rounded-lg">
+                <button className="text-white flex items-center gap-3 border-b border-[#ee2fee] hover:text-[#ee2fee] transition-all duration-700 px-1 md:px-3 py-2 rounded-lg">
                   Backend code
                   <MdArrowOutward />
                 </button>
               </Link>
-              <div className="block md:hidden text-2xl">
-                <MdArrowOutward />
-              </div>
             </div>
             <div className="text-4xl md:mt-5 hidden md:flex justify-end">
               <Link
