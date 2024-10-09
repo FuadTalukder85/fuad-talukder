@@ -6,7 +6,7 @@ import { TypeAnimation } from "react-type-animation";
 const Home = () => {
   return (
     <div id="home">
-      <div className="bg-img flex items-center md:h-screen pt-20 md:pt-0 text-[#f2ecff]">
+      <div className="bg-img flex items-center md:h-screen pt-6 md:pt-0 text-[#f2ecff]">
         <div className="mx-auto">
           <h5 className="border border-[#ee2fee] w-44 py-2 px-4 text-center rounded-full mx-auto">
             <p className="flex items-center justify-center gap-3">
@@ -24,9 +24,8 @@ const Home = () => {
           <TypeAnimation
             className="mt-8 md:w-[775px] md:px-[170px] text-[#ee2fee] text-xl md:text-2xl"
             sequence={[
-              // Same substring at the start will only be typed out once, initially
               "Specialized in javascript, Typescript...",
-              1000, // wait 1s before replacing "Mice" with "Hamsters"
+              1000,
               "Specialized in React js, Next js...",
               "Specialized in Node js, Mongodb...",
               1000,

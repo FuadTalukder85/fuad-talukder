@@ -125,22 +125,22 @@ const Contact = () => {
           </div>
         </div>
       </div>
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-2 md:gap-10 mt-16">
-        <div className="bg-[#2b033077] ps-2 md:ps-10 py-7 rounded-md md:w-[300px] shadow-black shadow-2xl border border-[#161212] hover:border hover:border-[#ee2fee] transition-all duration-700">
+      <div className="md:grid grid-cols-2 md:grid-cols-4 gap-2 md:gap-10 mt-16">
+        <div className="mb-5 md:mb-0 bg-[#2b033077] ps-2 md:ps-10 py-7 rounded-md md:w-[300px] shadow-black shadow-2xl border border-[#161212] hover:border hover:border-[#ee2fee] transition-all duration-700">
           <h5 className="text-[#cacaca]">Email :</h5>
           <p className="text-white mt-3">webfuadtk@gmail.com</p>
         </div>
-        <div className="bg-[#2b033077] ps-2 md:ps-10 py-7 rounded-md md:w-[300px] shadow-black shadow-2xl border border-[#161212] hover:border hover:border-[#ee2fee] transition-all duration-700">
+        <div className="mb-5 md:mb-0 bg-[#2b033077] ps-2 md:ps-10 py-7 rounded-md md:w-[300px] shadow-black shadow-2xl border border-[#161212] hover:border hover:border-[#ee2fee] transition-all duration-700">
           <h5 className="text-[#cacaca]">Phone :</h5>
           <p className="text-white mt-3">01756-867585</p>
         </div>
-        <div className="bg-[#2b033077] ps-2 md:ps-10 py-7 rounded-md md:w-[300px] shadow-black shadow-2xl border border-[#161212] hover:border hover:border-[#ee2fee] transition-all duration-700">
+        <div className="mb-5 md:mb-0 bg-[#2b033077] ps-2 md:ps-10 py-7 rounded-md md:w-[300px] shadow-black shadow-2xl border border-[#161212] hover:border hover:border-[#ee2fee] transition-all duration-700">
           <h5 className="text-[#cacaca]">Address :</h5>
           <p className="text-white mt-3">Kashipur, Narayanganj</p>
         </div>
         <div className="bg-[#2b033077] ps-2 md:ps-10 py-7 rounded-md md:w-[300px] shadow-black shadow-2xl border border-[#161212] hover:border hover:border-[#ee2fee] transition-all duration-700">
           <h5 className="text-[#cacaca]">Follow :</h5>
-          <p className="text-white mt-3 flex gap-3">
+          <p className="text-white mt-3 flex md:gap-3">
             <Link href="https://github.com/FuadTalukder85">
               <button className="border border-[#ee2fee] p-1 rounded-full mr-3">
                 <FaGithubSquare />

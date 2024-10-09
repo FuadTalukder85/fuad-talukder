@@ -12,7 +12,7 @@ const LeftSideBar = () => {
       </div>
       <h1 className="mt-5 text-3xl flex justify-center">Fuad Talukder</h1>
       <p className="flex justify-center text-white">Jr. Frontend Developer</p>
-      <div className="mt-10">
+      <div className="mt-5 md:mt-10">
         <li>
           <Link
             to="home"
@@ -93,7 +93,7 @@ const LeftSideBar = () => {
       </div>
 
       {/* <div className="divider divider-error mt-10">~</div> */}
-      <div className="flex justify-center items-center gap-4 mt-10">
+      <div className="flex justify-center items-center gap-4 mt-5 md:mt-10">
         <div className="bg-[#ee2fee] h-[1px] w-[47%]"></div>
         <div className="w-[4%]">~</div>
         <div className="bg-[#ee2fee] h-[1px] w-[47%]"></div>

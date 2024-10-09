@@ -9,20 +9,20 @@ const Projects = () => {
         <p>~ My Work</p>
         <h5 className="text-4xl">RECENT PROJECT</h5>
       </div>
-      <div className="md:grid grid-cols-2 gap-16 mt-16">
+      <div className="md:grid grid-cols-2 gap-16 mt-8 md:mt-16">
         {/* project 01 */}
-        <div className="md:flex items-center gap-7 mt-16 md:mt-0">
-          <div className="flex items-center gap-2 md:gap-5 shadow-black shadow-2xl">
+        <div className="md:flex items-center gap-7 mt-8 md:mt-0">
+          <div className="md:flex items-center gap-2 md:gap-5 shadow-black shadow-2xl">
+            <div className="block md:hidden">
+              <p className="text-xl">E-commerce</p>
+              <p className="mt-2 pb-10 md:pb-0">Mern stack</p>
+            </div>
             <Image
               src="https://i.postimg.cc/9MgjTS2B/vogal.png"
               alt="vogal"
               width={250}
               height={250}
             ></Image>
-            <div className="block md:hidden">
-              <p className="text-xl">E-commerce</p>
-              <p className="mt-2">Mern stack</p>
-            </div>
           </div>
           <div className="border-b md:border-none py-12 md:py-0 pb-5 md:pb-0">
             <p className="hidden md:block text-3xl">Vogal : E-commerce</p>
@@ -69,17 +69,17 @@ const Projects = () => {
 
         {/* project 02 */}
         <div className="md:flex items-center gap-7 mt-16 md:mt-0">
-          <div className="flex items-center gap-2 md:gap-5 shadow-black shadow-2xl">
+          <div className="md:flex items-center gap-2 md:gap-5 shadow-black shadow-2xl">
+            <div className="block md:hidden">
+              <p className="text-xl">E-commerce</p>
+              <p className="mt-2 pb-10 md:pb-0">Mern stack</p>
+            </div>
             <Image
               src="https://i.postimg.cc/DwKRxxsN/Food-Sphere.png"
               alt="vogal"
               width={250}
               height={250}
             ></Image>
-            <div className="block md:hidden">
-              <p className="text-xl">E-commerce</p>
-              <p className="mt-2">Mern stack</p>
-            </div>
           </div>
           <div className="border-b md:border-none py-12 md:py-0 pb-5 md:pb-0">
             <p className="hidden md:block text-3xl">FoodSphere</p>
@@ -132,17 +132,17 @@ const Projects = () => {
 
         {/* project 03 */}
         <div className="md:flex items-center gap-7 mt-16 md:mt-0">
-          <div className="flex items-center gap-2 md:gap-5 shadow-black shadow-2xl">
+          <div className="md:flex items-center gap-2 md:gap-5 shadow-black shadow-2xl">
+            <div className="block md:hidden">
+              <p className="text-xl">E-commerce</p>
+              <p className="mt-2 pb-10 md:pb-0">Mern stack</p>
+            </div>
             <Image
               src="https://i.postimg.cc/T3qFFnJ3/Grocer-Ease.png"
               alt="vogal"
               width={250}
               height={250}
             ></Image>
-            <div className="block md:hidden">
-              <p className="text-xl">E-commerce</p>
-              <p className="mt-2">Mern stack</p>
-            </div>
           </div>
           <div className="border-b md:border-none py-12 md:py-0 pb-5 md:pb-0">
             <p className="hidden md:block text-3xl">GrocerEase</p>

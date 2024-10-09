@@ -34,19 +34,19 @@ const HomePage = () => {
       <Home></Home>
       <About></About>
       {/* what i do */}
-      <div className="bg-color md:px-32 pt-28">
+      <div className="bg-color md:px-32 pt-10 md:pt-28">
         <Service></Service>
       </div>
       {/* skills  */}
-      <div className="bg-color md:px-32 pb-10 pt-28">
+      <div className="bg-color md:px-32 md:pb-10 pt-10 md:pt-28">
         <Skill skill={allSkill}></Skill>
       </div>
       {/* projects  */}
-      <div className="bg-img md:px-32 md:pb-10 pt-28">
+      <div className="bg-img md:px-32 md:pb-10 pt-10 md:pt-28">
         <Projects></Projects>
       </div>
       {/* contact */}
-      <div className="bg-img md:px-32 md:pb-28 pt-28">
+      <div className="bg-img md:px-32 md:pb-10 pt-10 md:pt-28">
         <Contact></Contact>
       </div>
     </div>

@@ -29,7 +29,7 @@ const SideBar = ({ children }: TChildren) => {
           {children}
           <label
             htmlFor="my-drawer-2"
-            className="text-white rounded-lg p-3 bg-[#ee2fee] text-2xl lg:hidden w-[50px] absolute top-5 right-8"
+            className="text-white rounded-lg p-3 bg-[#ee2fee] text-2xl lg:hidden w-[50px] absolute top-5 right-5"
           >
             <CiMenuFries />
           </label>
@@ -42,7 +42,7 @@ const SideBar = ({ children }: TChildren) => {
           ></label>
           <ul className="sidebar menu border-r-2 border-black p-4 w-80 min-h-full">
             <LeftSideBar></LeftSideBar>
-            <div className="mt-10">
+            <div className="mt-5 md:mt-10">
               <div className="flex gap-3 items-center">
                 {" "}
                 <button className="border border-[#ee2fee] p-1 rounded-full">

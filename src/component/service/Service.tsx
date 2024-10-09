@@ -7,7 +7,7 @@ const Service = () => {
       <p className="text-white md:mt-10 px-5 md:px-0">~ My Service</p>
       <h5 className="text-4xl text-white px-5 md:px-0">My Specialties</h5>
       {/* accordion */}
-      <div className="collapse collapse-plus text-white mt-16">
+      <div className="collapse collapse-plus text-white mt-8 md:mt-16">
         <input type="radio" name="my-accordion-3" defaultChecked />
         <div className="collapse-title text-xl font-medium">
           <div className="flex gap-3 items-center">
